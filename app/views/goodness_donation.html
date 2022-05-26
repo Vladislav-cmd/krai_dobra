@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Чтобы на IOS номер телефона не изменял свой стиль -->
+		<meta name="format-detection" content="telephone=no">
+		 <!-- Для подключения иконки к сайту -->
+	 	<link rel="shortcut icon" href="/public/pictures/goodness_icon.ico">
+		<link rel="stylesheet" href="/public/css/goodness_main.css?">
+		<link rel="stylesheet" href="/public/css/goodness_donation.css?">
+		<title>Край Добра. Пожертвование детям.</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header lock-padding">
+				<div class="header__container _container">
+					<div class="header__logo">
+						<a href="/app/views/goodness_main.html">
+							<div class="header__logo-img">
+								<img class="logo__main" src="/public/pictures/header/logo_main.svg" alt="logo_main">
+								<img class="logo__text-more" src="/public/pictures/header/logo_text.svg" alt="logo_text">
+							</div>
+						</a>
+					</div>
+					<!-- Бургер на 776px -->
+					<div class="header__burger-block">
+						<div class="header__burger-button">
+							<span></span>
+						</div>
+					</div>
+					<div class="header__menu">
+						<div class="header__menu-top help">
+							<div class="help__mail">
+								<a href="mailto:info@kray-dobra.ru"><img src="/public/pictures/header/mail.svg" alt="mail"></a>
+	   						<a class="help__mail-mobile" href="mailto:info@kray-dobra.ru">info@kray-dobra.ru</a>
+	   					</div>
+							<div class="help__phone">
+								<a href="tel:88612034545"><img src="/public/pictures/header/phone.svg" alt="phone"></a>
+	   						<a class="help__mail-mobile" href="tel:88612034545">8(861)203-45-45</a>
+	   					</div>
+							<div class="help__donation donate-link-transparent"><a tabindex="1" href="/app/views/goodness_all-stories.html">хочу помочь</a></div>
+						</div>
+
+						<nav class="header__menu-bot navigation">
+							<ul class="navigation__list">
+			            	<li class="navigation__item">
+	                    		<a tabindex="2" href="/app/views/goodness_fonds.html" class="navigation__link">о фонде</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="3" href="/app/views/goodness_reports.html" class="navigation__link">отчеты</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="4" href="/app/views/goodness_projects.html" class="navigation__link">проекты</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="5" href="/app/views/goodness_news.html" class="navigation__link">новости</a>
+	           				</li>
+			            	<li class="navigation__item last-item">
+	                    		<a tabindex="6" href="/app/views/goodness_contacts.html" class="navigation__link">контакты</a>
+	           				</li>
+			            	<li class="navigation__item inactive-item">
+	                    		<a tabindex="4" href="/app/views/goodness_who-cares.html" class="navigation__link">кому помогли</a>
+	           				</li>
+			            	<li class="navigation__item inactive-item">
+	                    		<a tabindex="5" href="/app/views/goodness_all-stories.html" class="navigation__link">кому помочь</a>
+	           				</li>
+			            	<li class="navigation__item inactive-item">
+	                    		<a tabindex="6" href="/app/views/goodness_get-help.html" class="navigation__link">получить помощь</a>
+	           				</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+			<!-- Упрощенная шапка при скролле (только для дисплеев шире 1146px) -->
+			<header class="header-scroll">
+				<div class="header-scroll__container _container">
+					<div class="header-scroll__logo">
+						<a href="/app/views/goodness_main.html">
+							<div class="header__scroll-logo">
+								<img src="/public/pictures/header/logo-scroll.svg" alt="logo-scroll" class="header__scroll-logo-img">
+							</div>
+						</a>
+					</div>
+					<div class="header__menu-scroll">
+						<div class="header__menu-right help-right">
+							<div class="help-right__interactive-icons">
+								<div class="help__mail-interactive">
+									<a href="mailto:info@kray-dobra.ru"><img src="/public/pictures/header/mail.svg" alt="mail"></a>
+		   					</div>
+								<div class="help__phone-interactive">
+									<a href="tel:88612034545"><img src="/public/pictures/header/phone.svg" alt="phone"></a>
+		   					</div>					
+							</div>
+							<div class="help__donation donate-link-transparent"><a tabindex="1" href="/app/views/goodness_all-stories.html">хочу помочь</a></div>
+						</div>
+
+						<nav class="header__menu-left navigation">
+							<ul class="navigation__list">
+			            	<li class="navigation__item">
+	                    		<a tabindex="2" href="/app/views/goodness_fonds.html" class="navigation__link">о фонде</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="3" href="/app/views/goodness_reports.html" class="navigation__link">отчеты</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="4" href="/app/views/goodness_projects.html" class="navigation__link">проекты</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="5" href="/app/views/goodness_news.html" class="navigation__link">новости</a>
+	           				</li>
+			            	<li class="navigation__item last-item">
+	                    		<a tabindex="6" href="/app/views/goodness_contacts.html" class="navigation__link">контакты</a>
+	           				</li>
+							</ul>
+						</nav>
+					</div>
+				</div>		
+			</header>
+
+			<main class="main">
+
+				<div class="donation__banner">
+					<div class="donation__banner-container _container">
+						<div class="donation__banner-header">
+							<h1>сделать пожертвование детям</h1>
+						</div>
+						<div class="donation__banner-image1">
+							<img src="/public/pictures/donation/coin.png" alt="coin">
+						</div>
+						<div class="donation__banner-image2">
+							<img src="/public/pictures/donation/credit.png" alt="credit">
+						</div>
+						<div class="donation__banner-mobile">
+							<div class="donation__banner-image1-mobile">
+								<img src="/public/pictures/donation/coin-mobile.png" alt="coin-mobile">
+							</div>
+							<div class="donation__banner-image2-mobile">
+								<img src="/public/pictures/donation/credit-mobile.png" alt="credit-mobile">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<section class="donation__navigation">
+					<div class="donation__navigation-container _container">
+						<div class="navigation__buttons">
+							<button tabindex="" class="navigation__button online-button">онлайн перевод</button>
+							<button tabindex="" class="navigation__button sms-button">sms</button>
+							<button tabindex="" class="navigation__button bank-button">банковский перевод</button>
+							<button tabindex="" class="navigation__button qr-button">qr код</button>
+						</div>
+					</div>
+				</section>
+
+				<section class="donation__online margin-donation">
+					<form action="#" class="donation__online-container _container">
+						<p>1. Способ оплаты</p>
+						<ul class="online__methods">
+							<li class="online__method-item">
+								<label class="online__method-label">
+									<input type="radio" name="method" value="1" class="online__method-radio">
+									<div class="online__method-pic">
+										<img src="/public/pictures/donation/triple.svg" alt="triple">
+										<img class="online__method-pic-mobile" src="/public/pictures/donation/triple-mobile.svg" alt="triple-mobile">
+									</div>
+								</label>
+							</li>
+							<li class="online__method-item">
+								<label class="online__method-label">
+									<input type="radio" name="method" value="2" class="online__method-radio">
+									<div class="online__method-pic">
+										<img src="/public/pictures/donation/tinkoff.svg" alt="tinkoff">
+										<img class="online__method-pic-mobile" src="/public/pictures/donation/tinkoff-mobile.svg" alt="tinkoff-mobile">
+									</div>
+								</label>
+							</li>
+							<li class="online__method-item">
+								<label class="online__method-label">
+									<input type="radio" name="method" value="3" class="online__method-radio">
+									<div class="online__method-pic">
+										<img src="/public/pictures/donation/alfa.svg" alt="alfa">
+										<img class="online__method-pic-mobile" src="/public/pictures/donation/alfa-mobile.svg" alt="alfa-mobile">
+									</div>
+								</label>
+							</li>
+							<li class="online__method-item">
+								<label class="online__method-label">
+									<input type="radio" name="method" value="4" class="online__method-radio">
+									<div class="online__method-pic">
+										<img src="/public/pictures/donation/sber.svg" alt="sber">
+										<img class="online__method-pic-mobile" src="/public/pictures/donation/sber-mobile.svg" alt="sber-mobile">
+									</div>
+								</label>
+							</li>
+							<li class="online__method-item">
+								<label class="online__method-label">
+									<input type="radio" name="method" value="5" class="online__method-radio">
+									<div class="online__method-pic">
+										<img src="/public/pictures/donation/yandex.svg" alt="yandex">
+										<img class="online__method-pic-mobile" src="/public/pictures/donation/yandex-mobile.svg" alt="yandex-mobile">
+									</div>
+								</label>
+							</li>
+							<li class="online__method-item online__method-more">
+								<label class="online__method-label">
+									<input type="radio" name="method" value="6" class="online__method-radio">
+									<div class="online__method-pic">
+										<span>другие варианты оплаты</span>
+									</div>
+								</label>
+							</li>
+							<li class="online__method-item online__method-another inactive">
+								<label class="online__method-label">
+									<input type="radio" name="method" value="5" class="online__method-radio">
+									<div class="online__method-pic">
+										<img src="/public/pictures/donation/qiwi.svg" alt="qiwi">
+										<img class="online__method-pic-mobile" src="/public/pictures/donation/qiwi-mobile.svg" alt="qiwi-mobile">
+									</div>
+								</label>
+							</li>
+							<li class="online__method-item online__method-another inactive">
+								<label class="online__method-label">
+									<input type="radio" name="method" value="5" class="online__method-radio">
+									<div class="online__method-pic">
+										<img src="/public/pictures/donation/apple.svg" alt="apple">
+										<img class="online__method-pic-mobile" src="/public/pictures/donation/apple-mobile.svg" alt="apple-mobile">
+									</div>
+								</label>
+							</li>
+							<li class="online__method-item online__method-another inactive">
+								<label class="online__method-label">
+									<input type="radio" name="method" value="5" class="online__method-radio">
+									<div class="online__method-pic">
+										<img src="/public/pictures/donation/google.svg" alt="google">
+										<img class="online__method-pic-mobile" src="/public/pictures/donation/google-mobile.svg" alt="google-mobile">
+									</div>
+								</label>
+							</li>
+							<li class="online__method-item online__method-another inactive">
+								<label class="online__method-label">
+									<input type="radio" name="method" value="5" class="online__method-radio">
+									<div class="online__method-pic">
+										<img src="/public/pictures/donation/halva.svg" alt="halva">
+										<img class="online__method-pic-mobile" src="/public/pictures/donation/halva-mobile.svg" alt="halva-mobile">
+									</div>
+								</label>
+							</li>
+						</ul>
+
+						<p>2. Сумма пожертвования</p>
+						<ul class="online__summ">
+							<li class="online__summ-item">
+								<label class="online__summ-label">
+									<input type="radio" class="online__summ-radio active-radio" name="summ" value="300">
+									<p class="online__summ-value">300 ₽</p>
+								</label>
+							</li>
+
+							<li class="online__summ-item">
+								<label class="online__summ-label">
+									<input type="radio" class="online__summ-radio active-radio" name="summ" value="500">
+									<p class="online__summ-value">500 ₽</p>
+								</label>
+							</li>
+
+							<li class="online__summ-item">
+								<label class="online__summ-label">
+									<input type="radio" class="online__summ-radio active-radio" name="summ" value="1000">
+									<p class="online__summ-value">1000 ₽</p>
+								</label>
+							</li>
+
+							<li class="online__summ-item">
+								<label class="online__summ-label">
+									<input type="radio" class="online__summ-radio active-radio" name="summ" value="2000">
+									<p class="online__summ-value">2000 ₽</p>
+								</label>
+							</li>
+
+							<li class="online__summ-item">
+								<input type="text" value="" placeholder="другая сумма" class="online__summ-another-value">
+							</li>
+						</ul>
+
+						<p>3. Электронная почта для квитанции</p>
+						<div class="online__receipt">
+							<input type="text" name="FIO" value="" placeholder="Ваше имя и фамилия" tabindex="" class="receipt__FIO online-separate-field">
+							<div class="receipt__bottom-part">
+								<input type="email" name="email" value="" placeholder="Адрес электронной почты" tabindex="" class="receipt__email online-separate-field">
+								<input type="text" name="place" value="" placeholder="Город" tabindex="" class="receipt__place online-separate-field">
+							</div>
+						</div>
+
+						<p>4. Тип платежа</p>
+
+						<ul class="online__type">
+							<li class="online__type-item">
+								<label class="online__type-label">
+									<input checked type="radio" class="online__type-radio" name="type_payment">
+									<span class="online__type-value">Единовременный</span>
+								</label>
+							</li>
+							<li class="online__type-item">
+								<label class="online__type-label">
+									<input type="radio" class="online__type-radio" name="type_payment">
+									<span class="online__type-value">Ежемесячный</span>
+								</label>
+							</li>
+						</ul>
+
+						<!-- брать коллекцию из кнопок выше, потом через цикл навешивать клик и создавать переменную с этим значением -->
+						<!-- и выводить сюда результат -->
+						<div class="online__result-summ">
+							<!-- Сумма пожертвования: <span><input id="summ_value" type="text" value="" oninput="showValue()"> рублей</span><br> -->
+							Сумма пожертвования: <span><input disabled type="text" value="" class="online__result-value"></span><br>
+							<!-- Сумма пожертвования: <span>500 </span> -->
+						</div>
+						<div class="online__sent-button">
+							<!-- <button type="submit">aотправить</button> -->
+							<button class="partners-form__button online-button-sent" type="submit">
+								<a href="#popup__success" class="partners-form__link popup__link">сделать пожертвование</a>
+							</button>
+							<div class="partners-content__agreement online-button-agreement">
+								Нажимая на кнопку вы соглашаетесь с условиями <a href="/app/views/goodness_offer.html">публичной офферты</a> и даете согласие на обработку <a href="/app/views/goodness_pers-data.html">персональных данных</a>
+							</div>
+						</div>
+					</form>
+				</section>
+
+				<section class="donation__sms margin-donation inactive">
+					<div class="donation__sms-container _container">
+						<div class="sms__banner">
+							<p>Отправьте SMS со словом <span>«Счастье»</span>, указав через пробел сумму пожертвования<br> на номер <span>7715</span>.<br> Например, <span>«Счастье 500»</span>.</p>
+						</div>
+						<div class="sms__text">
+							<p>
+								После списания суммы покупки на вашем счете должно остаться не менее 10 руб. Минимальная сумма единовременного платежа 10 руб. Максимальный разовый платеж 15 000 ₽. Максимальная сумма платежей за сутки 40 000 ₽. Максимальная сумма платежей за месяц 40 000 ₽. Услуга недоступна абонентам с корпоративными и кредитными (постоплатными) тарифными планами.
+							</p>
+						</div>
+						<div class="sms__limit">
+							<p>Возрастное ограничение</p>
+							<div class="sms__Limit-icon">
+								<p>16+</p>
+							</div>
+						</div>
+						<div class="sms__agreement">
+							Отправляя СМС вы соглашаетесь с условиями <a href="/app/views/goodness_offer.html">публичной офферты</a> и даете согласие на обработку <a href="/app/views/goodness_pers-data.html">персональных данных</a>
+						</div>
+					</div>
+				</section>
+
+				<section class="donation__bank margin-donation inactive">
+					<div class="donation__bank-container _container">
+						<div class="bank__width-container">
+							<div class="bank__title">
+								<h2>Перечислить деньги на расчетный счет БФПД «Край добра» можно в банкомате при помощи пластиковой карты.</h2>
+							</div>
+							<div class="bank__subtitle">
+								<h3>Также в любом банке на территории Краснодарского края, просто заполнив бланк с указанием расчетного счета БФПД «Край добра» и сделав перечисление денежных средств по следующим реквизитам:</h3>
+							</div>
+							<span class="bank-block-header">
+								БФПД «Край добра»
+							</span>
+							<p class="bank-block-content block-location">
+								350000, Краснодарский край, г. Краснодар<br>
+								ул. Красная, дом № 42. 8/861/203-445
+							</p>
+							<span class="bank-block-header">
+								ПАО Сбербанк г. Краснодар №8619
+							</span>
+							<p class="bank-block-content">р/с 40703810130000000555</p>
+							<p class="bank-block-content">к/с 30101810100000000602</p>
+							<p class="bank-block-content">ИНН 2310981082</p>
+							<p class="bank-block-content">КПП 231001001</p>
+							<p class="bank-block-content">БИК 040349602</p>
+							<div class="bank-block__bot-content">
+								<p>Назначение платежа Благотворительное пожертвование на ведение уставной деятельности</p>
+								<p>Если Вы хотите помочь конкретному ребенку, пожалуйста, укажите в назначении платежа: благотворительная помощь*ФИО ребенка*.</p>
+								<p>Информацию о детях, нуждающихся в помощи, можно получить по адресу: г. Краснодар. ул. Красная, 42 или на нашем сайте в разделе "Им нужна помощь".</p>
+								<p>В графе «назначение платежа» необходимо указывать «Благотворительное пожертвование» или в случае помощи конкретному ребенку – «Благотворительная помощь *ФИО ребенка*», иначе по налоговому законодательству такие денежные поступления будут считаться доходом, и фонд обязан будет заплатить налог на прибыль.</p>
+							</div>
+							<div class="bank-upload-file">
+								<a class="upload__link" download href="">
+									<img src="/public/pictures/donation/upload.svg" alt="upload">
+									<p>Скачать реквизиты фонда</p>
+								</a>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="donation__qr margin-donation inactive">
+					<div class="donation__qr-container _container">
+						<div class="qr__block">
+							<h2 class="qr__block-scan">отсканируй qr код<br><span>спаси ребенка!</span></h2>
+							<div class="qr__block-img">
+								<a href="#popup__qr" class="popup__link"><img src="/public/pictures/donation/qr.png" alt="qr"></a>
+							</div>
+							<p>Кликните и отсканируйте этот QR код<br> с помощью камеры вашего телефона</p>
+						</div>
+					</div>
+				</section>
+
+
+				<!-- Попап успешного пожертвования  -->
+				<div id="popup__success" class="popup">
+					<div class="popup__body">
+						<div class="popup__content successfully-sent">
+							<h2><span>Спасибо!</span><br>ваш платеж прошел успешно</h2>
+							<div class="successfully-sent__icon"></div>
+							<a href="#header" class="successfully-sent__close close-popup">Закрыть</a>						
+						</div>
+					</div>
+				</div>
+
+				<!-- Попап для QR-кода  -->
+				<div id="popup__qr" class="popup">
+					<div class="popup__body">
+						<div class="popup__content successfully-sent">
+							<h2><span>QR КОД</span><br>спаси ребенка!</h2>
+							<div class="qr-cod-image">
+								<img src="/public/pictures/donation/qr.png" alt="qr">
+							</div>
+							<a href="#header" class="successfully-sent__close close-popup">Закрыть</a>						
+						</div>
+					</div>
+				</div>
+
+				<!-- плашка снизу  (добалять класс active__bar)-->
+				<div class="main__bar lock-padding">
+					<img src="/public/pictures/heart.png" alt="heart">
+					<p>Отправьте СМС на номер <span>7715</span><br class="bar-br"> с сообщением «счастье *сумма*»</p>
+					<img src="/public/pictures/heart.png" alt="heart">
+				</div>
+
+			</main>
+
+			<footer class="footer">
+				<div class="footer__container _container">
+					<div class="footer__top">
+						<div class="footer__top-logo">
+							<a href="/app/views/goodness_main.html"><img src="/public/pictures/footer/logo.svg" alt="logo"></a>
+						</div>
+						<div class="footer__top-logo-mobile">
+							<a href="/app/views/goodness_main.html"><img src="/public/pictures/footer/logo-mobile.svg" alt="logo-mobile"></a>
+						</div>
+						<div class="footer__top-navigation footernav">
+							<div class="footernav__top">
+								<div class="footernav__top-link link-frame">
+									<a class="footernav__top-link-frame" href="/app/views/goodness_who-cares.html">
+										<img src="/public/pictures/footer/frame.svg" alt="frame" class="footernav__top-link-frame-white">
+										<img src="/public/pictures/footer/frame_hover.svg" alt="frame_hover" class="footernav__top-link-frame-hover">
+										<p>кому помогли</p>
+									</a>
+								</div>
+								<div class="footernav__top-link link-baby">
+									<a class="footernav__top-link-baby" href="/app/views/goodness_all-stories.html">
+										<img src="/public/pictures/footer/baby-boy.svg" alt="baby-boy" class="footernav__top-link-baby-white">
+										<img src="/public/pictures/footer/baby-boy_hover.svg" alt="baby-boy_hover" class="footernav__top-link-baby-hover">
+										<p>кому помочь</p>
+									</a>
+								</div>
+								<div class="footernav__top-link link-ambulance">
+									<a class="footernav__top-link-ambulance" href="/app/views/goodness_get-help.html">
+										<img src="/public/pictures/footer/ambulance.svg" alt="ambulance" class="footernav__top-link-ambulance-white">
+										<img src="/public/pictures/footer/ambulance_hover.svg" alt="ambulance_hover" class="footernav__top-link-ambulance-hover">
+										<p>получить помощь</p>
+									</a>
+								</div>
+							</div>
+							
+							<nav class="footernav__bot">
+								<ul class="footernav__bot-list">
+				            	<li class="footernav__bot-item">
+		                    		<a href="/app/views/goodness_fonds.html" class="footernav__bot-link">о фонде</a>
+		           				</li>
+				            	<li class="footernav__bot-item">
+		                    		<a href="/app/views/goodness_reports.html" class="footernav__bot-link">отчеты</a>
+		           				</li>
+				            	<li class="footernav__bot-item">
+		                    		<a href="/app/views/goodness_projects.html" class="footernav__bot-link">проекты</a>
+		           				</li>
+				            	<li class="footernav__bot-item">
+		                    		<a href="/app/views/goodness_news.html" class="footernav__bot-link">новости</a>
+		           				</li>
+				            	<li class="footernav__bot-item">
+		                    		<a href="/app/views/goodness_contacts.html" class="footernav__bot-link">контакты</a>
+		           				</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer__top-contact contact-footer">            
+							<div class="contact-footer__phone">
+								<a href="tel:88612034545"><img src="/public/pictures/footer/phone.svg" alt="phone"></a>
+	   						<a href="tel:88612034545">8(861)203-45-45</a>
+							</div>
+							<div class="contact-footer__address">
+	   						<p>г. Краснодар, ул. Красная, д.42, 1 этаж</p>
+							</div>
+							<div class="contact-footer__mail">
+								<a href="mailto:info@kray-dobra.ru"><img src="/public/pictures/footer/mail.svg" alt="mail"></a>
+	   						<a href="mailto:info@kray-dobra.ru">info@kray-dobra.ru</a>
+							</div>	
+						</div>
+					</div>
+
+					<div class="footer__bot">
+						<div class="footer__bot-policy">
+							<p>Политика конфиденциальности</p>
+						</div>
+						<div class="footer__bot-copyright">
+							<p>© 2022 Благотворительный фонд помощи детям «Край добра»</p>
+						</div>
+						<div class="footer__bot-designed">
+							<p>Разработано: design&code</p>
+						</div>
+						<div class="footer__bot-media">
+							<div class="footer__bot-scan">
+								<img src="/public/pictures/footer/qr.svg" alt="qr">
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>				
+
+		</div>
+
+
+		
+		<!-- Подключаем jQuery (без неё JS не работает) -->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+		<!-- Подключаем JS -->
+		<script src="/public/js/slick.min.js"></script>
+		<script src="/public/js/goodness_common.js"></script>
+		<script src="/public/js/goodness_donation.js"></script>
+		<script src="/public/js/goodness_header.js"></script>
+	</body>
+</html>

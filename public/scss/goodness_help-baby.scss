@@ -1,0 +1,141 @@
+.donation__navigation {
+	margin: 70px 0 0 0;
+}
+.donation__online-form {
+	> p {
+		color: #767885;
+		font-family: 'Lato', sans-serif;
+		font-weight: 500;
+		font-size: 1.125*16px;
+		line-height: 122%;
+		margin: 0 0 20px 0;
+		@media (max-width: 876px) {
+			color: #414449;
+			line-height: 125%;
+			font-weight: 600;
+		}
+	}
+}
+
+
+.donation__online-container {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	@media (max-width: 1176px) {
+		display: inherit;
+		justify-content: inherit;
+	}
+	.help-baby__card {
+		margin: 41px 0 0 0;
+	}
+}
+
+// ----------------------------------------
+.donation__sms-container {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	@media (max-width: 1176px) {
+		display: inherit;
+		justify-content: inherit;
+	}
+}
+.donation__sms-form {
+
+}
+// ----------------------------------------
+.donation__bank-container {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	@media (max-width: 1176px) {
+		display: inherit;
+		justify-content: inherit;
+	}
+}
+.donation__bank-form {
+
+}
+// ----------------------------------------
+.donation__qr-container {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	@media (max-width: 1176px) {
+		display: inherit;
+		justify-content: inherit;
+	}
+}
+.donation__qr-form {
+	
+}
+// ----------------------------------------
+.help-baby__card-separate-mob {
+	margin: 60px 0 0 0;
+}
+.help-baby__card-separate-mobile {}
+._container {}
+.help-baby__card-mobile {
+	display: none;
+	@media (max-width: 1176px) {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 100%;
+	}
+}
+
+.help-baby__card {
+	width: 454px;
+	@media (max-width: 1336px) {
+		width: 300px;
+	}
+	@media (max-width: 1176px) {
+		display: none;
+	}
+}
+.baby__card-image {
+	width: 454px;
+	height: 633px;
+	border-radius: 20px;
+	overflow: hidden;
+	@media (max-width: 1336px) {
+		width: 300px;
+		height: 400px;
+	}
+	@media (max-width: 350px) {
+		width: 255px;
+		height: 340px;
+	}
+	img {
+		border-radius: 20px;
+		height: 100%;
+		width: 100%;
+		object-fit: cover;
+	}
+}
+.baby__card-name {
+	color: #FF6060;
+	font-family: 'Lato', sans-serif;
+	font-weight: 600;
+	font-size: 1.625*16px;
+	line-height: 130%;
+	text-align: center;
+	margin: 20px 0 10px 0;
+	@media (max-width: 1336px) {
+		margin: 40px 0 10px 0;
+		font-size: 1.56*16px;
+		line-height: 120%;
+		text-shadow: 0px 10px 20px rgba(255, 255, 255, 0.25);
+	}
+}
+.baby__card-purpose {
+	color: #767885;
+	font-family: 'Lato', sans-serif;
+	font-size: 1*16px;
+	font-weight: 400;
+	line-height: 142%;
+	text-align: center;
+	display: block;
+}

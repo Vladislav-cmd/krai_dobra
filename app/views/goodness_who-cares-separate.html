@@ -1,0 +1,350 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Чтобы на IOS номер телефона не изменял свой стиль -->
+		<meta name="format-detection" content="telephone=no">
+		 <!-- Для подключения иконки к сайту -->
+	 	<link rel="shortcut icon" href="/public/pictures/goodness_icon.ico">
+		<link rel="stylesheet" href="/public/css/goodness_main.css?">
+		<link rel="stylesheet" href="/public/css/goodness_who-cares-separate.css?">
+		<title>Край Добра. Кому помогли.</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header lock-padding">
+				<div class="header__container _container">
+					<div class="header__logo">
+						<a href="/app/views/goodness_main.html">
+							<div class="header__logo-img">
+								<img class="logo__main" src="/public/pictures/header/logo_main.svg" alt="logo_main">
+								<img class="logo__text-more" src="/public/pictures/header/logo_text.svg" alt="logo_text">
+							</div>
+						</a>
+					</div>
+					<!-- Бургер на 776px -->
+					<div class="header__burger-block">
+						<div class="header__burger-button">
+							<span></span>
+						</div>
+					</div>
+					<div class="header__menu">
+						<div class="header__menu-top help">
+							<div class="help__mail">
+								<a href="mailto:info@kray-dobra.ru"><img src="/public/pictures/header/mail.svg" alt="mail"></a>
+	   						<a class="help__mail-mobile" href="mailto:info@kray-dobra.ru">info@kray-dobra.ru</a>
+	   					</div>
+							<div class="help__phone">
+								<a href="tel:88612034545"><img src="/public/pictures/header/phone.svg" alt="phone"></a>
+	   						<a class="help__mail-mobile" href="tel:88612034545">8(861)203-45-45</a>
+	   					</div>
+							<div class="help__donation donate-link-transparent"><a tabindex="1" href="/app/views/goodness_all-stories.html">хочу помочь</a></div>
+						</div>
+
+						<nav class="header__menu-bot navigation">
+							<ul class="navigation__list">
+			            	<li class="navigation__item">
+	                    		<a tabindex="2" href="/app/views/goodness_fonds.html" class="navigation__link">о фонде</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="3" href="/app/views/goodness_reports.html" class="navigation__link">отчеты</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="4" href="/app/views/goodness_projects.html" class="navigation__link">проекты</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="5" href="/app/views/goodness_news.html" class="navigation__link">новости</a>
+	           				</li>
+			            	<li class="navigation__item last-item">
+	                    		<a tabindex="6" href="/app/views/goodness_contacts.html" class="navigation__link">контакты</a>
+	           				</li>
+			            	<li class="navigation__item inactive-item">
+	                    		<a tabindex="4" href="/app/views/goodness_who-cares.html" class="navigation__link">кому помогли</a>
+	           				</li>
+			            	<li class="navigation__item inactive-item">
+	                    		<a tabindex="5" href="/app/views/goodness_all-stories.html" class="navigation__link">кому помочь</a>
+	           				</li>
+			            	<li class="navigation__item inactive-item">
+	                    		<a tabindex="6" href="/app/views/goodness_get-help.html" class="navigation__link">получить помощь</a>
+	           				</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+			<!-- Упрощенная шапка при скролле (только для дисплеев шире 1146px) -->
+			<header class="header-scroll">
+				<div class="header-scroll__container _container">
+					<div class="header-scroll__logo">
+						<a href="/app/views/goodness_main.html">
+							<div class="header__scroll-logo">
+								<img src="/public/pictures/header/logo-scroll.svg" alt="logo-scroll" class="header__scroll-logo-img">
+							</div>
+						</a>
+					</div>
+					<div class="header__menu-scroll">
+						<div class="header__menu-right help-right">
+							<div class="help-right__interactive-icons">
+								<div class="help__mail-interactive">
+									<a href="mailto:info@kray-dobra.ru"><img src="/public/pictures/header/mail.svg" alt="mail"></a>
+		   					</div>
+								<div class="help__phone-interactive">
+									<a href="tel:88612034545"><img src="/public/pictures/header/phone.svg" alt="phone"></a>
+		   					</div>					
+							</div>
+							<div class="help__donation donate-link-transparent"><a tabindex="1" href="/app/views/goodness_all-stories.html">хочу помочь</a></div>
+						</div>
+
+						<nav class="header__menu-left navigation">
+							<ul class="navigation__list">
+			            	<li class="navigation__item">
+	                    		<a tabindex="2" href="/app/views/goodness_fonds.html" class="navigation__link">о фонде</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="3" href="/app/views/goodness_reports.html" class="navigation__link">отчеты</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="4" href="/app/views/goodness_projects.html" class="navigation__link">проекты</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="5" href="/app/views/goodness_news.html" class="navigation__link">новости</a>
+	           				</li>
+			            	<li class="navigation__item last-item">
+	                    		<a tabindex="6" href="/app/views/goodness_contacts.html" class="navigation__link">контакты</a>
+	           				</li>
+							</ul>
+						</nav>
+					</div>
+				</div>		
+			</header>
+
+			<main class="main main-white__background">
+
+				<div class="who-cares__banner">
+					<div class="who-cares__banner-container _container">
+						<div class="who-cares__banner-header">
+							<h1>найтарлаков максим</h1>
+						</div>
+						<div class="who-cares__banner-info">
+							<div class="banner-info__summ">
+								<p>Собрано</p>
+								<span>850.000 тыс.рублей</span>
+								<span class="mobile__summ-view">850 000 ₽</span>
+							</div>
+							<div class="banner-info__diagnosis">
+								<p>Диагноз</p>
+								<span>Конституционная апластическая анемия</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<section class="who-cares__navigation">
+					<div class="who-cares__navigation-container _container">
+						<ul class="who-cares__navigation-links">
+							<li class="who-cares__navigation-link">
+								<a class="who-cares__navigation-link-main" href="/app/views/goodness_main.html">Главная</a>
+							</li>
+							<li class="who-cares__navigation-link">
+								<span class="who-cares__navigation-link-divide">/</span>
+							</li>
+							<li class="who-cares__navigation-link">
+								<a class="who-cares__navigation-link-main" href="/app/views/goodness_who-cares.html">Кому помогли</a>
+							</li>
+							<li class="who-cares__navigation-link">
+								<span class="who-cares__navigation-link-divide">/</span>
+							</li>
+							<li class="who-cares__navigation-link">
+								<a class="who-cares__navigation-link-current" href="#">Семья Найтарлаковых</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="separate__review">
+					<div class="separate__review-container _container">
+						<h2 class="separate__review-header">Семья Найтарлаковых</h2>
+						<div class="separate__review-galery">
+							<div class="separate__review-items">
+								<div class="separate__review-item">
+									<img src="/public/pictures/who-cares/separate/naitarlakov.png" alt="naitarlakov">
+								</div>
+								<div class="separate__review-item">
+									<img src="/public/pictures/who-cares/separate/naitarlakov.png" alt="naitarlakov">
+								</div>
+								<div class="separate__review-item">
+									<img src="/public/pictures/who-cares/separate/naitarlakov.png" alt="naitarlakov">
+								</div>
+								<div class="separate__review-item">
+									<img src="/public/pictures/who-cares/separate/naitarlakov.png" alt="naitarlakov">
+								</div>
+								<div class="separate__review-item">
+									<img src="/public/pictures/who-cares/separate/naitarlakov.png" alt="naitarlakov">
+								</div>
+								<div class="separate__review-item">
+									<img src="/public/pictures/who-cares/separate/naitarlakov.png" alt="naitarlakov">
+								</div>
+							</div>
+						</div>
+						<div class="separate__review-text">
+							<p>Здравствуйте, уважаемые работники фонда! Хочу выразить огромную благодарность за вашу помощь в лечении и реабилитации ребенка. Владик, благодаря разным процедурам, прекрасному питанию, поправился на 2 кг.</p>
+							<p>Морской воздух, чистая вода, чудесная природа оказали прекрасное влияние на повышение иммунитета, который у больных муковисцидозом очень слабый. Очень благодарны отзывчивым, добрым, чутким людям, которые жертвуют свои средства для больных деток, дают им надежду на лучшее будущее. Пусть Бог воздаст им и восполнит</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="separate__help-child">
+					<div class="separate__help-child-container _container">
+						<h2 class="help-child__header">помочь больным детям</h2>
+					</div>
+					<div class="main__payment">
+						<div class="main__payment-container _container">
+							<div class="main__payment-amount amount">
+								<div class="amount__choice">
+									<ul class="amount__choice-items">
+										<li tabindex="8" class="amount__choice-item">300 ₽</li>
+										<li tabindex="9"class="amount__choice-item">500 ₽</li>
+										<li tabindex="10"class="amount__choice-item">1000 ₽</li>
+										<li tabindex="11"class="amount__choice-item">2000 ₽</li>
+										<li tabindex="12"class="amount__choice-item">3000 ₽</li>
+										<li tabindex="13"class="amount__choice-item">другая сумма</li>
+									</ul>
+								</div>
+								<div class="amount__button">
+								<div class="amount__button-help donate-link-no-transparent"><a tabindex="14" href="/app/views/goodness_donation.html">помочь ребенку</a></div>
+								<p>Соглашаюсь с <a tabindex="15" href="/app/views/goodness_offer.html">условиями оферты</a></p>
+								</div>
+							</div>
+
+							<div class="main__payment-method method">
+								<p>Оплата через</p>
+								<div class="method__variable">
+									<ul class="method__variable-items">
+										<li class="method__variable-item"><img src="/public/pictures/main/payment/visa.svg" alt="visa"></li>
+										<li class="method__variable-item"><img src="/public/pictures/main/payment/mastercard.svg" alt="mastercard"></li>
+										<li class="method__variable-item"><img src="/public/pictures/main/payment/sber.svg" alt="sber"></li>
+										<li class="method__variable-item"><img src="/public/pictures/main/payment/alfa.svg" alt="alfa"></li>
+										<li class="method__variable-item"><img src="/public/pictures/main/payment/yandex.svg" alt="yandex"></li>
+									</ul>
+								</div>
+								<a tabindex="16" href="/app/views/goodness_donation.html">Другие способы оплаты</a>
+							</div>
+						</div>
+					</div>					
+				</section>
+
+
+
+
+				<!-- плашка снизу  (добалять класс active__bar)-->
+				<div class="main__bar lock-padding">
+					<img src="/public/pictures/heart.png" alt="heart">
+					<p>Отправьте СМС на номер <span>7715</span><br class="bar-br"> с сообщением «счастье *сумма*»</p>
+					<img src="/public/pictures/heart.png" alt="heart">
+				</div>
+
+			</main>
+
+			<footer class="footer">
+				<div class="footer__container _container">
+					<div class="footer__top">
+						<div class="footer__top-logo">
+							<a href="/app/views/goodness_main.html"><img src="/public/pictures/footer/logo.svg" alt="logo"></a>
+						</div>
+						<div class="footer__top-logo-mobile">
+							<a href="/app/views/goodness_main.html"><img src="/public/pictures/footer/logo-mobile.svg" alt="logo-mobile"></a>
+						</div>
+						<div class="footer__top-navigation footernav">
+							<div class="footernav__top">
+								<div class="footernav__top-link link-frame">
+									<a class="footernav__top-link-frame" href="/app/views/goodness_who-cares.html">
+										<img src="/public/pictures/footer/frame.svg" alt="frame" class="footernav__top-link-frame-white">
+										<img src="/public/pictures/footer/frame_hover.svg" alt="frame_hover" class="footernav__top-link-frame-hover">
+										<p>кому помогли</p>
+									</a>
+								</div>
+								<div class="footernav__top-link link-baby">
+									<a class="footernav__top-link-baby" href="/app/views/goodness_all-stories.html">
+										<img src="/public/pictures/footer/baby-boy.svg" alt="baby-boy" class="footernav__top-link-baby-white">
+										<img src="/public/pictures/footer/baby-boy_hover.svg" alt="baby-boy_hover" class="footernav__top-link-baby-hover">
+										<p>кому помочь</p>
+									</a>
+								</div>
+								<div class="footernav__top-link link-ambulance">
+									<a class="footernav__top-link-ambulance" href="/app/views/goodness_get-help.html">
+										<img src="/public/pictures/footer/ambulance.svg" alt="ambulance" class="footernav__top-link-ambulance-white">
+										<img src="/public/pictures/footer/ambulance_hover.svg" alt="ambulance_hover" class="footernav__top-link-ambulance-hover">
+										<p>получить помощь</p>
+									</a>
+								</div>
+							</div>
+							
+							<nav class="footernav__bot">
+								<ul class="footernav__bot-list">
+				            	<li class="footernav__bot-item">
+		                    		<a href="/app/views/goodness_fonds.html" class="footernav__bot-link">о фонде</a>
+		           				</li>
+				            	<li class="footernav__bot-item">
+		                    		<a href="/app/views/goodness_reports.html" class="footernav__bot-link">отчеты</a>
+		           				</li>
+				            	<li class="footernav__bot-item">
+		                    		<a href="/app/views/goodness_projects.html" class="footernav__bot-link">проекты</a>
+		           				</li>
+				            	<li class="footernav__bot-item">
+		                    		<a href="/app/views/goodness_news.html" class="footernav__bot-link">новости</a>
+		           				</li>
+				            	<li class="footernav__bot-item">
+		                    		<a href="/app/views/goodness_contacts.html" class="footernav__bot-link">контакты</a>
+		           				</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer__top-contact contact-footer">            
+							<div class="contact-footer__phone">
+								<a href="tel:88612034545"><img src="/public/pictures/footer/phone.svg" alt="phone"></a>
+	   						<a href="tel:88612034545">8(861)203-45-45</a>
+							</div>
+							<div class="contact-footer__address">
+	   						<p>г. Краснодар, ул. Красная, д.42, 1 этаж</p>
+							</div>
+							<div class="contact-footer__mail">
+								<a href="mailto:info@kray-dobra.ru"><img src="/public/pictures/footer/mail.svg" alt="mail"></a>
+	   						<a href="mailto:info@kray-dobra.ru">info@kray-dobra.ru</a>
+							</div>	
+						</div>
+					</div>
+
+					<div class="footer__bot">
+						<div class="footer__bot-policy">
+							<p>Политика конфиденциальности</p>
+						</div>
+						<div class="footer__bot-copyright">
+							<p>© 2022 Благотворительный фонд помощи детям «Край добра»</p>
+						</div>
+						<div class="footer__bot-designed">
+							<p>Разработано: design&code</p>
+						</div>
+						<div class="footer__bot-media">
+							<div class="footer__bot-scan">
+								<img src="/public/pictures/footer/qr.svg" alt="qr">
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>					
+
+		</div>
+
+
+		
+		<!-- Подключаем jQuery (без неё JS не работает) -->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+		<!-- Подключаем slick -->
+		<script src="/public/js/slick.min.js"></script>
+		<!-- Подключаем JS -->
+		<script src="/public/js/goodness_common.js"></script>
+        <script src="/public/js/goodness_header.js"></script>
+	</body>
+</html>

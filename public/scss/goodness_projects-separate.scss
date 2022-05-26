@@ -1,0 +1,448 @@
+.main-white__background {
+  background: #FFFFFF !important;
+}
+.projects-separate__navigation {
+  margin: 40px 0 0 0;
+  background: linear-gradient(91.01deg, rgba(135, 133, 255, 0.5) 0%, rgba(116, 127, 226, 0.5) 50.52%, rgba(94, 205, 218, 0.5) 100%),
+    linear-gradient(0deg, #70AAF8, #70AAF8);
+  @media (max-width: 776px) {
+    display: none;
+  }
+}
+.separate__navigation-container {}
+
+.separate__navigation-links {
+  display: flex;
+  width: 100%;
+  padding: 25px 0;
+}
+.separate__navigation-link {
+  &:not(:last-child) {
+    margin:  0 6px 0 0;
+  }
+  a {
+    color: #F2F2F2;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    font-size: 0.875*15px;
+    line-height: 121%;
+    opacity: 0.7;
+    transition: all 0.3s ease 0s;
+    &:hover {
+     text-decoration: underline;
+    }
+  }
+}
+.separate__navigation-link-main {}
+.page-link {}
+.separate__navigation-link-divide {
+  color: #F2F2F2;
+}
+.separate__navigation-link-projects {}
+.separate__navigation-link-current {
+  opacity: 1 !important;
+}
+
+// -------------------------------------------------------SLIDER
+.separate__review {
+
+}
+.separate__review-container {}
+.separate__review-header-block {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 70px 0 30px 0;
+  h2 {
+    text-align: center;
+    font-family: 'Gilroy', sans-serif;
+    color: #414449;
+    font-weight: 800;
+    font-size: 2*15px !important;
+    line-height: 130%;
+    text-transform: uppercase;
+    position: relative;
+    @media (max-width: 876px) {
+      font-size: 1.56*15px !important;
+    }
+    @media (max-width: 776px) {
+      font-weight: 800 !important;
+      line-height: 112% !important;
+      letter-spacing: 0.05em !important;
+      text-shadow: 0px 10px 20px rgba(255, 255, 255, 0.25);
+    }
+    @media (max-width: 400px) {
+      font-size: 1.46*15px !important;
+      letter-spacing: 0.02em !important;
+    }
+    @media (max-width: 360px) {
+      font-size: 1.36*15px !important;
+      font-weight: 700 !important;
+    }
+    &:before {
+      content: '«';
+      position: absolute;
+      top: -3px;
+      left: -20px;
+      @media (max-width: 1336px) {
+        display: none;
+      }
+    }
+    &:after {
+      content: '»';
+      position: absolute;
+      top: -3px;
+      right: -20px;
+      @media (max-width: 1336px) {
+        display: none;
+      }
+    } 
+  }
+  span {
+    display: none;
+    @media (max-width: 1336px) {
+      display: inline-block;
+    }
+  }
+
+
+}
+.separate__review-header {
+  // text-align: center;
+  // font-family: 'Gilroy', sans-serif;
+  // color: #414449;
+  // font-weight: 800;
+  // font-size: 2*15px;
+  // line-height: 130%;
+  // margin: 70px 0 30px 0;
+  // text-transform: uppercase;
+  // position: relative;
+  // &:before {
+  //   content: '«';
+  //   position: absolute;
+  //   top: -3px;
+  //   left: -20px;
+  //   @media (max-width: 1336px) {
+  //     display: none;
+  //   }
+  // }
+  // &:after {
+  //   content: '»';
+  //   position: absolute;
+  //   top: -3px;
+  //   right: -20px;
+  //   @media (max-width: 1336px) {
+  //     display: none;
+  //   }
+  // }
+  // span {
+  //   display: none;
+  //   @media (max-width: 1336px) {
+  //     display: inline-block;
+  //   }
+  // }
+  // @media (max-width: 776px) {
+  //   margin: 40px 0 30px 0;
+  //   font-size: 1.56*15px;
+  //   font-weight: 800;
+  //   line-height: 112%;
+  //   letter-spacing: 0.05em;
+  //   text-shadow: 0px 10px 20px rgba(255, 255, 255, 0.25);
+  // }
+}
+
+.separate__review-galery {
+  margin: 0 0 30px 0;
+  @media (max-width: 1146px) {
+    margin: 0 0 80px 0;
+  }
+}
+.separate__review-items {
+  height: 400px;
+  position: relative;
+  // Для галереи (моб версия) 
+  @media (max-width: 1146px) {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  @media (max-width: 876px) {
+    height: 250px;
+  }
+  @media (max-width: 567px) {
+    max-width: 380px;
+  }
+}
+.separate__review-item {
+  height: 400px;
+  width: 741px;
+  display: flex;
+  justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
+  // это свойство не работает на IOS
+  // overflow: hidden;
+  // Для галереи (моб версия) 
+  @media (max-width: 876px) {
+    height: 250px;
+    width: 463px;
+  }
+  @media (max-width: 567px) {
+    height: 250px;
+  }
+  img {
+    border-radius: 20px;
+    @media (max-width: 567px) {
+      width: 100%;
+      height: 100%;
+      // border-radius: 20px;
+    }
+    object-fit: cover;
+  }
+}
+.separate__review-text {
+  margin: 0 0 70px 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 1.125*15px;
+  line-height: 160%;
+  color: #414449;
+  p {
+    &:not(:last-child) {
+      margin: 0 0 10px 0;
+    }
+  }
+  @media (max-width: 776px) {
+    font-size: 1*15px;
+    line-height: 140%;
+    font-weight: 500;
+    color: #767885;
+  }
+}
+// =========================================================SLIDER
+/* Ограничивающая оболочка */
+.separate__review-items .slick-list {
+  margin: 0 -16px;
+  overflow: hidden;
+  @media (max-width: 567px) {
+    border-radius: 20px;
+  }
+}
+/* Лента слайдов */
+.separate__review-items .slick-track {
+  // чтобы слайды выстроились в ряд
+  display: flex;
+  // чтобы добавить адаптивную высоту для картинок, то надо добавить
+  align-items: center; // прижмет слайды к верху
+  height: 400px;
+  @media (max-width: 876px) {
+    height: 250px;
+  }
+}
+/* Слайд */
+.separate__review-items .slick-slide {
+  margin: 0 16px;
+  opacity: 0.5;
+  @media (max-width: 1146px) {
+    opacity: 1;
+  }
+}
+.separate__review-items .slick-list.draggable {
+  margin: 0 auto;
+}
+
+/* Слайд основной */
+.slick-slide.slick-current {}
+/* Слайд по центру */
+.separate__review-items .slick-slide.slick-center {
+  opacity: 1;
+}
+
+.separate__review-items .slick-arrow {
+  position: absolute;
+  bottom: 43%;
+  z-index: 10;
+  // чтобы убрать надписи на кнопках, то просто уменьшаем шрифт текста
+  font-size: 0;
+  width: 60px;
+  height: 60px;
+  border: 2px solid #E2E2E2;
+  border-radius: 50%;
+  box-sizing: border-box;
+  display: block;
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.3s ease 0s;
+  @media (max-width: 1146px) {
+    border: none;
+    background-color: none;
+    top: 170px;
+    width: 24px;
+    height: 24px;
+    border-radius: 0%;
+  }
+  @media (max-width: 876px) {
+    top: 45%;
+  }
+  &:hover {
+    border: 2px solid #719AED;
+    @media (max-width: 1146px) {
+      border: none;
+    }
+    &:before {
+      background: #719AED;
+      @media (max-width: 1146px) {
+        background: #414449;
+      }
+    }
+    &:after {
+      background: #719AED;
+      @media (max-width: 1146px) {
+        background: #414449;
+      }
+    }
+  }
+  &:active {
+    border: 2px solid #719AED;
+    @media (max-width: 1146px) {
+      border: none;
+    }
+    &:before {
+      background: #719AED;
+      @media (max-width: 1146px) {
+        background: #414449;
+      }
+    }
+    &:after {
+      background: #719AED;
+      @media (max-width: 1146px) {
+        background: #414449;
+      }
+    }
+  }
+  &:before {
+    transition: all 0.2s ease 0s;
+    content: '';
+    position: absolute;
+    top: 19.5px;
+    left: 27px;
+    width: 2px;
+    height: 10px;
+    background: #E2E2E2;
+    transform: rotate(35deg);
+    border-radius: 5px;
+    @media (max-width: 1146px) {
+      top: 4px;
+      left: 8.5px;
+      background: #414449;
+      border-radius: none;
+    }
+  }
+  &:after {
+    transition: all 0.2s ease 0s;
+    content: '';
+    position: absolute;
+    top: 26.5px;
+    left: 27px;
+    width: 2px;
+    height: 10px;
+    background: #E2E2E2;
+    transform: rotate(-35deg);
+    border-radius: 5px;
+    @media (max-width: 1146px) {
+      top: 10px;
+      left: 8.5px;
+      background: #414449;
+      border-radius: none;
+    }
+  }
+}
+.separate__review-items .slick-arrow.slick-prev {
+  left: 290px;
+  @media (max-width: 1310px) {
+    left: 274px;
+  }
+  @media (max-width: 1287px) {
+    left: 264px;
+  }
+  @media (max-width: 1260px) {
+    left: 254px;
+  }
+  @media (max-width: 1220px) {
+    left: 234px;
+  }
+  @media (max-width: 1190px) {
+    left: 214px;
+  }
+  @media (max-width: 1146px) {
+    left: -15px;
+  }
+  @media (max-width: 1046px) {
+    left: -5px;
+  }
+  @media (max-width: 567px) {
+    left: -15px;
+  }
+}
+.separate__review-items .slick-arrow.slick-next {
+  right: 290px;
+  transform: scaleX(-1);
+  @media (max-width: 1310px) {
+    right: 274px;
+  }
+  @media (max-width: 1287px) {
+    right: 264px;
+  }
+  @media (max-width: 1260px) {
+    right: 254px;
+  }
+  @media (max-width: 1220px) {
+    right: 234px;
+  }
+  @media (max-width: 1190px) {
+    right: 214px;
+  }
+  @media (max-width: 1146px) {
+    right: -15px;
+  }
+  @media (max-width: 1046px) {
+    right: -5px;
+  }
+  @media (max-width: 567px) {
+    right: -15px;
+  }
+}
+.separate__review-items .slick-arrow.slick-disabled {
+  opacity: 0.5;
+}
+// ------------------DOTS
+/* Точки (булиты) */
+.separate__review-items .slick-dots {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 0 0;
+}
+.separate__review-items .slick-dots {
+  li {
+    list-style: none;
+    margin: 0px 10px;
+  }
+}
+/* Элемент точки */
+.separate__review-items .slick-dots {
+  button {
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background-color: #BEC5CC;
+    border-radius: 50%;
+  }
+}
+/* Активная точка */
+.separate__review-items .slick-active {
+  button {
+    background: linear-gradient(99.04deg, rgba(247, 35, 86, 0.88) 2.83%, rgba(251, 57, 127, 0.88) 52.94%, rgba(251, 75, 0, 0.88) 95.33%);
+  }
+}
+// -------------------------------------------------------

@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Чтобы на IOS номер телефона не изменял свой стиль -->
+		<meta name="format-detection" content="telephone=no">
+		 <!-- Для подключения иконки к сайту -->
+	 	<link rel="shortcut icon" href="/public/pictures/goodness_icon.ico">
+		<link rel="stylesheet" href="/public/css/goodness_main.css?">
+		<link rel="stylesheet" href="/public/css/goodness_news.css?">
+		<title>Край Добра. Новости.</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header lock-padding">
+				<div class="header__container _container">
+					<div class="header__logo">
+						<a href="/app/views/goodness_main.html">
+							<div class="header__logo-img">
+								<img class="logo__main" src="/public/pictures/header/logo_main.svg" alt="logo_main">
+								<img class="logo__text-more" src="/public/pictures/header/logo_text.svg" alt="logo_text">
+							</div>
+						</a>
+					</div>
+					<!-- Бургер на 776px -->
+					<div class="header__burger-block">
+						<div class="header__burger-button">
+							<span></span>
+						</div>
+					</div>
+					<div class="header__menu">
+						<div class="header__menu-top help">
+							<div class="help__mail">
+								<a href="mailto:info@kray-dobra.ru"><img src="/public/pictures/header/mail.svg" alt="mail"></a>
+	   						<a class="help__mail-mobile" href="mailto:info@kray-dobra.ru">info@kray-dobra.ru</a>
+	   					</div>
+							<div class="help__phone">
+								<a href="tel:88612034545"><img src="/public/pictures/header/phone.svg" alt="phone"></a>
+	   						<a class="help__mail-mobile" href="tel:88612034545">8(861)203-45-45</a>
+	   					</div>
+							<div class="help__donation donate-link-transparent"><a tabindex="1" href="/app/views/goodness_all-stories.html">хочу помочь</a></div>
+						</div>
+
+						<nav class="header__menu-bot navigation">
+							<ul class="navigation__list">
+			            	<li class="navigation__item">
+	                    		<a tabindex="2" href="/app/views/goodness_fonds.html" class="navigation__link">о фонде</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="3" href="/app/views/goodness_reports.html" class="navigation__link">отчеты</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="4" href="/app/views/goodness_projects.html" class="navigation__link">проекты</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="5" href="/app/views/goodness_news.html" class="navigation__link">новости</a>
+	           				</li>
+			            	<li class="navigation__item last-item">
+	                    		<a tabindex="6" href="/app/views/goodness_contacts.html" class="navigation__link">контакты</a>
+	           				</li>
+			            	<li class="navigation__item inactive-item">
+	                    		<a tabindex="4" href="/app/views/goodness_who-cares.html" class="navigation__link">кому помогли</a>
+	           				</li>
+			            	<li class="navigation__item inactive-item">
+	                    		<a tabindex="5" href="/app/views/goodness_all-stories.html" class="navigation__link">кому помочь</a>
+	           				</li>
+			            	<li class="navigation__item inactive-item">
+	                    		<a tabindex="6" href="/app/views/goodness_get-help.html" class="navigation__link">получить помощь</a>
+	           				</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+			<!-- Упрощенная шапка при скролле (только для дисплеев шире 1146px) -->
+			<header class="header-scroll">
+				<div class="header-scroll__container _container">
+					<div class="header-scroll__logo">
+						<a href="/app/views/goodness_main.html">
+							<div class="header__scroll-logo">
+								<img src="/public/pictures/header/logo-scroll.svg" alt="logo-scroll" class="header__scroll-logo-img">
+							</div>
+						</a>
+					</div>
+					<div class="header__menu-scroll">
+						<div class="header__menu-right help-right">
+							<div class="help-right__interactive-icons">
+								<div class="help__mail-interactive">
+									<a href="mailto:info@kray-dobra.ru"><img src="/public/pictures/header/mail.svg" alt="mail"></a>
+		   					</div>
+								<div class="help__phone-interactive">
+									<a href="tel:88612034545"><img src="/public/pictures/header/phone.svg" alt="phone"></a>
+		   					</div>					
+							</div>
+							<div class="help__donation donate-link-transparent"><a tabindex="1" href="/app/views/goodness_all-stories.html">хочу помочь</a></div>
+						</div>
+
+						<nav class="header__menu-left navigation">
+							<ul class="navigation__list">
+			            	<li class="navigation__item">
+	                    		<a tabindex="2" href="/app/views/goodness_fonds.html" class="navigation__link">о фонде</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="3" href="/app/views/goodness_reports.html" class="navigation__link">отчеты</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="4" href="/app/views/goodness_projects.html" class="navigation__link">проекты</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="5" href="/app/views/goodness_news.html" class="navigation__link">новости</a>
+	           				</li>
+			            	<li class="navigation__item last-item">
+	                    		<a tabindex="6" href="/app/views/goodness_contacts.html" class="navigation__link">контакты</a>
+	           				</li>
+							</ul>
+						</nav>
+					</div>
+				</div>		
+			</header>
+
+			<main class="main">
+
+				<div class="news__banner">
+					<div class="news__banner-container _container">
+						<div class="news__banner-header">
+							<h1>новости</h1>
+						</div>
+						<div class="news__banner-image1">
+							<img src="/public/pictures/news/matte.png" alt="matte">
+						</div>
+						<div class="news__banner-image2">
+							<img src="/public/pictures/news/camera.png" alt="camera">
+						</div>
+						<div class="news__banner-mobile">
+							<div class="news__banner-image1-mobile">
+								<img src="/public/pictures/news/matte-mobile.png" alt="matte-mobile">
+							</div>
+							<div class="news__banner-image2-mobile">
+								<img src="/public/pictures/news/camera-mobile.png" alt="camera-mobile">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<section class="news__navigation">
+					<div class="news__navigation-container _container">
+						<ul class="news__navigation-links">
+							<li class="news__navigation-link">
+								<a class="news__navigation-link-main" href="/app/views/goodness_main.html">Главная</a>
+							</li>
+							<li class="news__navigation-link">
+								<span class="news__navigation-link-divide">/</span>
+							</li>
+							<li class="news__navigation-link">
+								<a class="news__navigation-link-current" href="#">Новости</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<div class="news__buttons">
+					<div class="news__buttons-container _container">
+						<button tabindex="" class="news__button fond-button">
+							<a href="#">новости фонда</a>
+						</button>
+						<button tabindex="" class="news__button mass_media-button">
+							<a href="#">сми о нас</a>
+						</button>
+					</div>
+				</div>
+
+				<section class="news__blocks">
+					<div class="news__form-container _container block-mass_media inactive">
+						<div class="news-issues__bottom">
+							<div class="news-issues__bottom-items">
+								<div class="bottom-issues__item">
+									<a href="/app/views/goodness_news-separate-media.html" class="bottom-issues__item-image">
+										<img src="/public/pictures/news/card_news/fond/card_1.png" alt="card_1">
+										<div class="bottom-issues__item-data">
+											<div class="data-issues__item-date">
+												<p>26 Апреля 2021</p>
+											</div>
+											<div class="data-issues__item-category">
+												<p>сми о нас</p>
+											</div>
+										</div>
+									</a>
+									<div class="bottom-issues__item-intro">
+										<div class="bottom-issues__item-intro-text">
+											<h2>Сегодня день рождения отмечает Илья Майоров из Краснодара.</h2>
+											<p>Подопечному фонда «Край добра» исполнилось 10 лет!</p>
+										</div>
+										<div class="bottom-issues__item-intro-link">
+											<a href="/app/views/goodness_news-separate-media.html">Читать новость</a>
+										</div>
+									</div>
+								</div>
+								<div class="bottom-issues__item">
+									<a href="/app/views/goodness_news-separate-media.html" class="bottom-issues__item-image">
+										<img src="/public/pictures/news/card_news/fond/card_2.png" alt="card_2">
+										<div class="bottom-issues__item-data">
+											<div class="data-issues__item-date">
+												<p>26 Апреля 2021</p>
+											</div>
+											<div class="data-issues__item-category">
+												<p>сми о нас</p>
+											</div>
+										</div>
+									</a>
+									<div class="bottom-issues__item-intro">
+										<div class="bottom-issues__item-intro-text">
+											<h2>Благотворительный заплыв в помощь тяжелобольным детям!</h2>
+											<p>В школе плавания «Нептун» состоялся благотворительный заплыв в пользу подопечных фонда «Край добра».</p>
+										</div>
+										<div class="bottom-issues__item-intro-link">
+											<a href="/app/views/goodness_news-separate-media.html">Читать новость</a>
+										</div>
+									</div>
+								</div>
+								<div class="bottom-issues__item">
+									<a href="/app/views/goodness_news-separate-media.html" class="bottom-issues__item-image">
+										<img src="/public/pictures/news/card_news/fond/card_3.png" alt="card_3">
+										<div class="bottom-issues__item-data">
+											<div class="data-issues__item-date">
+												<p>26 Апреля 2021</p>
+											</div>
+											<div class="data-issues__item-category">
+												<p>сми о нас</p>
+											</div>
+										</div>
+									</a>
+									<div class="bottom-issues__item-intro">
+										<div class="bottom-issues__item-intro-text">
+											<h2>Новые слуховые аппараты для Артура Атабекяна.</h2>
+											<p>Новый год у участника проекта «Эквалайзер» Артура Атабекяна начался  с перехода в другую школу.</p>
+										</div>
+										<div class="bottom-issues__item-intro-link">
+											<a href="/app/views/goodness_news-separate-media.html">Читать новость</a>
+										</div>
+									</div>
+								</div>
+								<div class="bottom-issues__item">
+									<a href="/app/views/goodness_news-separate-media.html" class="bottom-issues__item-image">
+										<img src="/public/pictures/news/card_news/fond/card_4.png" alt="card_4">
+										<div class="bottom-issues__item-data">
+											<div class="data-issues__item-date">
+												<p>26 Апреля 2021</p>
+											</div>
+											<div class="data-issues__item-category">
+												<p>сми о нас</p>
+											</div>
+										</div>
+									</a>
+									<div class="bottom-issues__item-intro">
+										<div class="bottom-issues__item-intro-text">
+											<h2>Сегодня день рождения отмечает Илья Майоров из Краснодара. Подопечному фонда «Край добра» исполнилось 10 лет</h2>
+											<p>Сегодня день рождения отмечает Илья Майоров из Краснодара. Подопечному фонда...</p>
+										</div>
+										<div class="bottom-issues__item-intro-link">
+											<a href="/app/views/goodness_news-separate-media.html">Читать новость</a>
+										</div>
+									</div>
+								</div>
+								<div class="bottom-issues__item">
+									<a href="/app/views/goodness_news-separate-media.html" class="bottom-issues__item-image">
+										<img src="/public/pictures/news/card_news/fond/card_5.png" alt="card_5">
+										<div class="bottom-issues__item-data">
+											<div class="data-issues__item-date">
+												<p>26 Апреля 2021</p>
+											</div>
+											<div class="data-issues__item-category">
+												<p>сми о нас</p>
+											</div>
+										</div>
+									</a>
+									<div class="bottom-issues__item-intro">
+										<div class="bottom-issues__item-intro-text">
+											<h2>Татьянин день сегодня отмечают кубанские студенты. Многие из них - волонтёры фонда «Край добра».</h2>
+											<p>Во время новогодней акции «Доброёлка» студенты, несмотря на зачёты и экзамены...</p>
+										</div>
+										<div class="bottom-issues__item-intro-link">
+											<a href="/app/views/goodness_news-separate-media.html">Читать новость</a>
+										</div>
+									</div>
+								</div>
+								<div class="bottom-issues__item">
+									<a href="/app/views/goodness_news-separate-media.html" class="bottom-issues__item-image">
+										<img src="/public/pictures/news/card_news/fond/card_6.png" alt="card_6">
+										<div class="bottom-issues__item-data">
+											<div class="data-issues__item-date">
+												<p>26 Апреля 2021</p>
+											</div>
+											<div class="data-issues__item-category">
+												<p>сми о нас</p>
+											</div>
+										</div>
+									</a>
+									<div class="bottom-issues__item-intro">
+										<div class="bottom-issues__item-intro-text">
+											<h2>20 января состоялся первый вебинар Интенсив-академии #ИнновацииДобра»</h2>
+											<p>Первая лекция была посвящена важным юридическим вопросам и организации делопроизводства в НКО, с чего начать...</p>
+										</div>
+										<div class="bottom-issues__item-intro-link">
+											<a href="/app/views/goodness_news-separate-media.html">Читать новость</a>
+										</div>
+									</div>
+								</div>
+								<div class="bottom-issues__item">
+									<a href="/app/views/goodness_news-separate-media.html" class="bottom-issues__item-image">
+										<img src="/public/pictures/news/card_news/fond/card_7.png" alt="card_7">
+										<div class="bottom-issues__item-data">
+											<div class="data-issues__item-date">
+												<p>26 Апреля 2021</p>
+											</div>
+											<div class="data-issues__item-category">
+												<p>сми о нас</p>
+											</div>
+										</div>
+									</a>
+									<div class="bottom-issues__item-intro">
+										<div class="bottom-issues__item-intro-text">
+											<h2>Руководитель благотворительного фонда помощи детям «Край Добра» Яна Сторожук возглавила список самых влиятельных общественников Кубани.</h2>
+											<p>Отличный повод искренне поблагодарить наших друзей, благотворителей и всех, кто помогает детям фонда бороться с тяжелым недугом, и прикладывает большие усилия...</p>
+										</div>
+										<div class="bottom-issues__item-intro-link">
+											<a href="/app/views/goodness_news-separate-media.html">Читать новость</a>
+										</div>
+									</div>
+								</div>
+								<div class="bottom-issues__item">
+									<a href="/app/views/goodness_news-separate-media.html" class="bottom-issues__item-image">
+										<img src="/public/pictures/news/card_news/fond/card_8.png" alt="card_8">
+										<div class="bottom-issues__item-data">
+											<div class="data-issues__item-date">
+												<p>26 Апреля 2021</p>
+											</div>
+											<div class="data-issues__item-category">
+												<p>сми о нас</p>
+											</div>
+										</div>
+									</a>
+									<div class="bottom-issues__item-intro">
+										<div class="bottom-issues__item-intro-text">
+											<h2>На проекте «Эквалайзер», начались занятия !</h2>
+											<p>На проекте «Эквалайзер», начались занятия! Ребята и преподаватели уже успели соскучится по рабочему процессу и друг по другу.</p>
+										</div>
+										<div class="bottom-issues__item-intro-link">
+											<a href="/app/views/goodness_news-separate-media.html">Читать новость</a>
+										</div>
+									</div>
+								</div>
+								<div class="bottom-issues__item specialized-issues">
+									<a href="/app/views/goodness_news-separate-media.html" class="specialized-issues__item-image">
+										<img src="/public/pictures/news/card_news/fond/card_video_1.png" alt="card_video_1">
+										<div class="specialized-issues__item-intro">
+											<p>О таком подарке к Новому Году мама нашего подопечного, даже не мечтала!</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="pagination">
+							<a href="#" class="pagination__previous-btn"><button></button></a>
+							<a href="#" class="pagination__page-btn"><button>1</button></a>
+							<a href="#" class="pagination__page-btn"><button>2</button></a>
+							<a href="#" class="pagination__page-btn"><button>3</button></a>
+							<a href="#" class="pagination__page-btn"><button>4</button></a>
+							<a href="#" class="pagination__page-btn"><button>5</button></a>
+							<a href="#" class="pagination__page-btn"><button>6</button></a>
+							<span class="pagination__page-ellipsis">...</span>
+							<a href="#" class="pagination__page-btn"><button>680</button></a>
+							<a href="#" class="pagination__next-btn"><button></button></a>
+						</div>
+					</div>
+					<!-- ------------------------------------------------------------------------------------------ -->
+					<div class="news__instruction-container  _container block-fond">
+						<div class="news-issues__bottom">
+							<div class="news-issues__bottom-items">
+								<div class="bottom-issues__item">
+									<a href="/app/views/goodness_news-separate.html" class="bottom-issues__item-image">
+										<img src="/public/pictures/news/card_news/fond/card_1.png" alt="card_1">
+										<div class="bottom-issues__item-data">
+											<div class="data-issues__item-date">
+												<p>26 Апреля 2021</p>
+											</div>
+											<div class="data-issues__item-category">
+												<p>дети</p>
+											</div>
+										</div>
+									</a>
+									<div class="bottom-issues__item-intro">
+										<div class="bottom-issues__item-intro-text">
+											<h2>Сегодня день рождения отмечает Илья Майоров из Краснодара.</h2>
+											<p>Подопечному фонда «Край добра» исполнилось 10 лет!</p>
+										</div>
+										<div class="bottom-issues__item-intro-link">
+											<a href="/app/views/goodness_news-separate.html">Читать новость</a>
+										</div>
+									</div>
+								</div>
+								<div class="bottom-issues__item">
+									<a href="/app/views/goodness_news-separate.html" class="bottom-issues__item-image">
+										<img src="/public/pictures/news/card_news/fond/card_2.png" alt="card_2">
+										<div class="bottom-issues__item-data">
+											<div class="data-issues__item-date">
+												<p>26 Апреля 2021</p>
+											</div>
+											<div class="data-issues__item-category">
+												<p>фонд</p>
+											</div>
+										</div>
+									</a>
+									<div class="bottom-issues__item-intro">
+										<div class="bottom-issues__item-intro-text">
+											<h2>Благотворительный заплыв в помощь тяжелобольным детям!</h2>
+											<p>В школе плавания «Нептун» состоялся благотворительный заплыв в пользу подопечных фонда «Край добра».</p>
+										</div>
+										<div class="bottom-issues__item-intro-link">
+											<a href="/app/views/goodness_news-separate.html">Читать новость</a>
+										</div>
+									</div>
+								</div>
+								<div class="bottom-issues__item">
+									<a href="/app/views/goodness_news-separate.html" class="bottom-issues__item-image">
+										<img src="/public/pictures/news/card_news/fond/card_3.png" alt="card_3">
+										<div class="bottom-issues__item-data">
+											<div class="data-issues__item-date">
+												<p>26 Апреля 2021</p>
+											</div>
+											<div class="data-issues__item-category">
+												<p>фонд</p>
+											</div>
+										</div>
+									</a>
+									<div class="bottom-issues__item-intro">
+										<div class="bottom-issues__item-intro-text">
+											<h2>Новые слуховые аппараты для Артура Атабекяна.</h2>
+											<p>Новый год у участника проекта «Эквалайзер» Артура Атабекяна начался  с перехода в другую школу.</p>
+										</div>
+										<div class="bottom-issues__item-intro-link">
+											<a href="/app/views/goodness_news-separate.html">Читать новость</a>
+										</div>
+									</div>
+								</div>
+								<div class="bottom-issues__item">
+									<a href="/app/views/goodness_news-separate.html" class="bottom-issues__item-image">
+										<img src="/public/pictures/news/card_news/fond/card_4.png" alt="card_4">
+										<div class="bottom-issues__item-data">
+											<div class="data-issues__item-date">
+												<p>26 Апреля 2021</p>
+											</div>
+											<div class="data-issues__item-category">
+												<p>дети</p>
+											</div>
+										</div>
+									</a>
+									<div class="bottom-issues__item-intro">
+										<div class="bottom-issues__item-intro-text">
+											<h2>Сегодня день рождения отмечает Илья Майоров из Краснодара. Подопечному фонда «Край добра» исполнилось 10 лет</h2>
+											<p>Сегодня день рождения отмечает Илья Майоров из Краснодара. Подопечному фонда...</p>
+										</div>
+										<div class="bottom-issues__item-intro-link">
+											<a href="/app/views/goodness_news-separate.html">Читать новость</a>
+										</div>
+									</div>
+								</div>
+								<div class="bottom-issues__item">
+									<a href="/app/views/goodness_news-separate.html" class="bottom-issues__item-image">
+										<img src="/public/pictures/news/card_news/fond/card_5.png" alt="card_5">
+										<div class="bottom-issues__item-data">
+											<div class="data-issues__item-date">
+												<p>26 Апреля 2021</p>
+											</div>
+											<div class="data-issues__item-category">
+												<p>фонд</p>
+											</div>
+										</div>
+									</a>
+									<div class="bottom-issues__item-intro">
+										<div class="bottom-issues__item-intro-text">
+											<h2>Татьянин день сегодня отмечают кубанские студенты. Многие из них - волонтёры фонда «Край добра».</h2>
+											<p>Во время новогодней акции «Доброёлка» студенты, несмотря на зачёты и экзамены...</p>
+										</div>
+										<div class="bottom-issues__item-intro-link">
+											<a href="/app/views/goodness_news-separate.html">Читать новость</a>
+										</div>
+									</div>
+								</div>
+								<div class="bottom-issues__item">
+									<a href="/app/views/goodness_news-separate.html" class="bottom-issues__item-image">
+										<img src="/public/pictures/news/card_news/fond/card_6.png" alt="card_6">
+										<div class="bottom-issues__item-data">
+											<div class="data-issues__item-date">
+												<p>26 Апреля 2021</p>
+											</div>
+											<div class="data-issues__item-category">
+												<p>сми о нас</p>
+											</div>
+										</div>
+									</a>
+									<div class="bottom-issues__item-intro">
+										<div class="bottom-issues__item-intro-text">
+											<h2>20 января состоялся первый вебинар Интенсив-академии #ИнновацииДобра»</h2>
+											<p>Первая лекция была посвящена важным юридическим вопросам и организации делопроизводства в НКО, с чего начать...</p>
+										</div>
+										<div class="bottom-issues__item-intro-link">
+											<a href="/app/views/goodness_news-separate.html">Читать новость</a>
+										</div>
+									</div>
+								</div>
+								<div class="bottom-issues__item">
+									<a href="/app/views/goodness_news-separate.html" class="bottom-issues__item-image">
+										<img src="/public/pictures/news/card_news/fond/card_7.png" alt="card_7">
+										<div class="bottom-issues__item-data">
+											<div class="data-issues__item-date">
+												<p>26 Апреля 2021</p>
+											</div>
+											<div class="data-issues__item-category">
+												<p>о фонде</p>
+											</div>
+										</div>
+									</a>
+									<div class="bottom-issues__item-intro">
+										<div class="bottom-issues__item-intro-text">
+											<h2>Руководитель благотворительного фонда помощи детям «Край Добра» Яна Сторожук возглавила список самых влиятельных общественников Кубани.</h2>
+											<p>Отличный повод искренне поблагодарить наших друзей, благотворителей и всех, кто помогает детям фонда бороться с тяжелым недугом, и прикладывает большие усилия...</p>
+										</div>
+										<div class="bottom-issues__item-intro-link">
+											<a href="/app/views/goodness_news-separate.html">Читать новость</a>
+										</div>
+									</div>
+								</div>
+								<div class="bottom-issues__item">
+									<a href="/app/views/goodness_news-separate.html" class="bottom-issues__item-image">
+										<img src="/public/pictures/news/card_news/fond/card_8.png" alt="card_8">
+										<div class="bottom-issues__item-data">
+											<div class="data-issues__item-date">
+												<p>26 Апреля 2021</p>
+											</div>
+											<div class="data-issues__item-category">
+												<p>дети</p>
+											</div>
+										</div>
+									</a>
+									<div class="bottom-issues__item-intro">
+										<div class="bottom-issues__item-intro-text">
+											<h2>На проекте «Эквалайзер», начались занятия !</h2>
+											<p>На проекте «Эквалайзер», начались занятия! Ребята и преподаватели уже успели соскучится по рабочему процессу и друг по другу.</p>
+										</div>
+										<div class="bottom-issues__item-intro-link">
+											<a href="/app/views/goodness_news-separate.html">Читать новость</a>
+										</div>
+									</div>
+								</div>
+								<div class="bottom-issues__item specialized-issues">
+									<a href="/app/views/goodness_news-separate.html" class="specialized-issues__item-image">
+										<img src="/public/pictures/news/card_news/fond/card_video_1.png" alt="card_video_1">
+										<div class="specialized-issues__item-intro">
+											<p>О таком подарке к Новому Году мама нашего подопечного, даже не мечтала!</p>
+										</div>
+									</a>
+								</div>
+							</div>
+						</div>
+						<div class="pagination">
+							<a href="#" class="pagination__previous-btn"><button></button></a>
+							<a href="#" class="pagination__page-btn"><button>1</button></a>
+							<a href="#" class="pagination__page-btn"><button>2</button></a>
+							<a href="#" class="pagination__page-btn"><button>3</button></a>
+							<a href="#" class="pagination__page-btn"><button>4</button></a>
+							<a href="#" class="pagination__page-btn"><button>5</button></a>
+							<a href="#" class="pagination__page-btn"><button>6</button></a>
+							<span class="pagination__page-ellipsis">...</span>
+							<a href="#" class="pagination__page-btn"><button>680</button></a>
+							<a href="#" class="pagination__next-btn"><button></button></a>
+						</div>
+					</div>
+				</section>
+
+
+
+
+
+				<!-- плашка снизу  (добалять класс active__bar)-->
+				<div class="main__bar lock-padding">
+					<img src="/public/pictures/heart.png" alt="heart">
+					<p>Отправьте СМС на номер <span>7715</span><br class="bar-br"> с сообщением «счастье *сумма*»</p>
+					<img src="/public/pictures/heart.png" alt="heart">
+				</div>
+
+			</main>
+
+			<footer class="footer">
+				<div class="footer__container _container">
+					<div class="footer__top">
+						<div class="footer__top-logo">
+							<a href="/app/views/goodness_main.html"><img src="/public/pictures/footer/logo.svg" alt="logo"></a>
+						</div>
+						<div class="footer__top-logo-mobile">
+							<a href="/app/views/goodness_main.html"><img src="/public/pictures/footer/logo-mobile.svg" alt="logo-mobile"></a>
+						</div>
+						<div class="footer__top-navigation footernav">
+							<div class="footernav__top">
+								<div class="footernav__top-link link-frame">
+									<a class="footernav__top-link-frame" href="/app/views/goodness_who-cares.html">
+										<img src="/public/pictures/footer/frame.svg" alt="frame" class="footernav__top-link-frame-white">
+										<img src="/public/pictures/footer/frame_hover.svg" alt="frame_hover" class="footernav__top-link-frame-hover">
+										<p>кому помогли</p>
+									</a>
+								</div>
+								<div class="footernav__top-link link-baby">
+									<a class="footernav__top-link-baby" href="/app/views/goodness_all-stories.html">
+										<img src="/public/pictures/footer/baby-boy.svg" alt="baby-boy" class="footernav__top-link-baby-white">
+										<img src="/public/pictures/footer/baby-boy_hover.svg" alt="baby-boy_hover" class="footernav__top-link-baby-hover">
+										<p>кому помочь</p>
+									</a>
+								</div>
+								<div class="footernav__top-link link-ambulance">
+									<a class="footernav__top-link-ambulance" href="/app/views/goodness_get-help.html">
+										<img src="/public/pictures/footer/ambulance.svg" alt="ambulance" class="footernav__top-link-ambulance-white">
+										<img src="/public/pictures/footer/ambulance_hover.svg" alt="ambulance_hover" class="footernav__top-link-ambulance-hover">
+										<p>получить помощь</p>
+									</a>
+								</div>
+							</div>
+							
+							<nav class="footernav__bot">
+								<ul class="footernav__bot-list">
+				            	<li class="footernav__bot-item">
+		                    		<a href="/app/views/goodness_fonds.html" class="footernav__bot-link">о фонде</a>
+		           				</li>
+				            	<li class="footernav__bot-item">
+		                    		<a href="/app/views/goodness_reports.html" class="footernav__bot-link">отчеты</a>
+		           				</li>
+				            	<li class="footernav__bot-item">
+		                    		<a href="/app/views/goodness_projects.html" class="footernav__bot-link">проекты</a>
+		           				</li>
+				            	<li class="footernav__bot-item">
+		                    		<a href="/app/views/goodness_news.html" class="footernav__bot-link">новости</a>
+		           				</li>
+				            	<li class="footernav__bot-item">
+		                    		<a href="/app/views/goodness_contacts.html" class="footernav__bot-link">контакты</a>
+		           				</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer__top-contact contact-footer">            
+							<div class="contact-footer__phone">
+								<a href="tel:88612034545"><img src="/public/pictures/footer/phone.svg" alt="phone"></a>
+	   						<a href="tel:88612034545">8(861)203-45-45</a>
+							</div>
+							<div class="contact-footer__address">
+	   						<p>г. Краснодар, ул. Красная, д.42, 1 этаж</p>
+							</div>
+							<div class="contact-footer__mail">
+								<a href="mailto:info@kray-dobra.ru"><img src="/public/pictures/footer/mail.svg" alt="mail"></a>
+	   						<a href="mailto:info@kray-dobra.ru">info@kray-dobra.ru</a>
+							</div>	
+						</div>
+					</div>
+
+					<div class="footer__bot">
+						<div class="footer__bot-policy">
+							<p>Политика конфиденциальности</p>
+						</div>
+						<div class="footer__bot-copyright">
+							<p>© 2022 Благотворительный фонд помощи детям «Край добра»</p>
+						</div>
+						<div class="footer__bot-designed">
+							<p>Разработано: design&code</p>
+						</div>
+						<div class="footer__bot-media">
+							<div class="footer__bot-scan">
+								<img src="/public/pictures/footer/qr.svg" alt="qr">
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>					
+
+		</div>
+
+
+		
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+		<script src="/public/js/slick.min.js"></script>
+		<script src="/public/js/goodness_common.js"></script>
+		<script src="/public/js/goodness_news.js"></script>
+		<script src="/public/js/goodness_header.js"></script>
+	</body>
+</html>

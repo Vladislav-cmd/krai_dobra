@@ -1,0 +1,479 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Чтобы на IOS номер телефона не изменял свой стиль -->
+		<meta name="format-detection" content="telephone=no">
+		 <!-- Для подключения иконки к сайту -->
+	 	<link rel="shortcut icon" href="/public/pictures/goodness_icon.ico">
+		<link rel="stylesheet" href="/public/css/goodness_main.css?">
+		<link rel="stylesheet" href="/public/css/goodness_who-cares.css?">
+		<title>Край Добра. Кому помогли.</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header lock-padding">
+				<div class="header__container _container">
+					<div class="header__logo">
+						<a href="/app/views/goodness_main.html">
+							<div class="header__logo-img">
+								<img class="logo__main" src="/public/pictures/header/logo_main.svg" alt="logo_main">
+								<img class="logo__text-more" src="/public/pictures/header/logo_text.svg" alt="logo_text">
+							</div>
+						</a>
+					</div>
+					<!-- Бургер на 776px -->
+					<div class="header__burger-block">
+						<div class="header__burger-button">
+							<span></span>
+						</div>
+					</div>
+					<div class="header__menu">
+						<div class="header__menu-top help">
+							<div class="help__mail">
+								<a href="mailto:info@kray-dobra.ru"><img src="/public/pictures/header/mail.svg" alt="mail"></a>
+	   						<a class="help__mail-mobile" href="mailto:info@kray-dobra.ru">info@kray-dobra.ru</a>
+	   					</div>
+							<div class="help__phone">
+								<a href="tel:88612034545"><img src="/public/pictures/header/phone.svg" alt="phone"></a>
+	   						<a class="help__mail-mobile" href="tel:88612034545">8(861)203-45-45</a>
+	   					</div>
+							<div class="help__donation donate-link-transparent"><a tabindex="1" href="/app/views/goodness_all-stories.html">хочу помочь</a></div>
+						</div>
+
+						<nav class="header__menu-bot navigation">
+							<ul class="navigation__list">
+			            	<li class="navigation__item">
+	                    		<a tabindex="2" href="/app/views/goodness_fonds.html" class="navigation__link">о фонде</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="3" href="/app/views/goodness_reports.html" class="navigation__link">отчеты</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="4" href="/app/views/goodness_projects.html" class="navigation__link">проекты</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="5" href="/app/views/goodness_news.html" class="navigation__link">новости</a>
+	           				</li>
+			            	<li class="navigation__item last-item">
+	                    		<a tabindex="6" href="/app/views/goodness_contacts.html" class="navigation__link">контакты</a>
+	           				</li>
+			            	<li class="navigation__item inactive-item">
+	                    		<a tabindex="4" href="/app/views/goodness_who-cares.html" class="navigation__link">кому помогли</a>
+	           				</li>
+			            	<li class="navigation__item inactive-item">
+	                    		<a tabindex="5" href="/app/views/goodness_all-stories.html" class="navigation__link">кому помочь</a>
+	           				</li>
+			            	<li class="navigation__item inactive-item">
+	                    		<a tabindex="6" href="/app/views/goodness_get-help.html" class="navigation__link">получить помощь</a>
+	           				</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+			<!-- Упрощенная шапка при скролле (только для дисплеев шире 1146px) -->
+			<header class="header-scroll">
+				<div class="header-scroll__container _container">
+					<div class="header-scroll__logo">
+						<a href="/app/views/goodness_main.html">
+							<div class="header__scroll-logo">
+								<img src="/public/pictures/header/logo-scroll.svg" alt="logo-scroll" class="header__scroll-logo-img">
+							</div>
+						</a>
+					</div>
+					<div class="header__menu-scroll">
+						<div class="header__menu-right help-right">
+							<div class="help-right__interactive-icons">
+								<div class="help__mail-interactive">
+									<a href="mailto:info@kray-dobra.ru"><img src="/public/pictures/header/mail.svg" alt="mail"></a>
+		   					</div>
+								<div class="help__phone-interactive">
+									<a href="tel:88612034545"><img src="/public/pictures/header/phone.svg" alt="phone"></a>
+		   					</div>					
+							</div>
+							<div class="help__donation donate-link-transparent"><a tabindex="1" href="/app/views/goodness_all-stories.html">хочу помочь</a></div>
+						</div>
+
+						<nav class="header__menu-left navigation">
+							<ul class="navigation__list">
+			            	<li class="navigation__item">
+	                    		<a tabindex="2" href="/app/views/goodness_fonds.html" class="navigation__link">о фонде</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="3" href="/app/views/goodness_reports.html" class="navigation__link">отчеты</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="4" href="/app/views/goodness_projects.html" class="navigation__link">проекты</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="5" href="/app/views/goodness_news.html" class="navigation__link">новости</a>
+	           				</li>
+			            	<li class="navigation__item last-item">
+	                    		<a tabindex="6" href="/app/views/goodness_contacts.html" class="navigation__link">контакты</a>
+	           				</li>
+							</ul>
+						</nav>
+					</div>
+				</div>		
+			</header>
+
+			<main class="main">
+
+				<div class="who-cares__banner">
+					<div class="who-cares__banner-container _container">
+						<div class="who-cares__banner-header">
+							<h1>кому помогли</h1>
+						</div>
+						<!-- absolute -->
+						<div class="who-cares__banner-image1">
+							<img src="/public/pictures/who-cares/image_1.png" alt="image_1">
+						</div>
+						<div class="who-cares__banner-image2">
+							<img src="/public/pictures/who-cares/image_2.png" alt="image_2">
+						</div>
+						<div class="who-cares__banner-image3">
+							<img src="/public/pictures/who-cares/image_3.png" alt="image_3">
+						</div>
+						<div class="who-cares__banner-image4">
+							<img src="/public/pictures/who-cares/image_4.png" alt="image_4">
+						</div>
+						<div class="who-cares__banner-mobile">
+							<div class="who-cares__banner-image1-mobile">
+								<img src="/public/pictures/who-cares/image_1-mob.png" alt="image_1-mob">
+							</div>
+							<div class="who-cares__banner-image2-mobile">
+								<img src="/public/pictures/who-cares/image_2-mob.png" alt="image_2-mob">
+							</div>
+							<div class="who-cares__banner-image3-mobile">
+								<img src="/public/pictures/who-cares/image_3-mob.png" alt="image_3-mob">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<section class="who-cares__navigation">
+					<div class="who-cares__navigation-container _container">
+						<ul class="who-cares__navigation-links">
+							<li class="who-cares__navigation-link">
+								<a class="who-cares__navigation-link-main" href="/app/views/goodness_main.html">Главная</a>
+							</li>
+							<li class="who-cares__navigation-link">
+								<span class="who-cares__navigation-link-divide">/</span>
+							</li>
+							<li class="who-cares__navigation-link">
+								<a class="who-cares__navigation-link-current" href="#">Кому помогли</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+				<section class="who-cares__histories">
+					<div class="who-cares__histories-container _container">
+						<div class="history-slider__items who-cares__items">
+							<div class="history-slider__item item-history">
+								<a href="/app/views/goodness_who-cares-separate.html">
+									<div class="item-history__image">
+										<img src="/public/pictures/main/history/history_4.jpg" alt="history_1">
+										<div class="item-history__age">8<br>лет</div>
+									</div>
+									<div class="item-history__info">
+										<h2>Березин Артем</h2>
+										<h3>г. Сочи</h3>
+										<p class="item-history__summ">мы помогли <span>200 000 ₽</span></p>
+										<p class="item-history__action">Купили Артему коляску и оплатили реабилитацию в центре.</p>
+										<div class="item-history__comments">
+											<h2>Артем рад изменениям в своей внешности</h2>
+											<p>«Мама, откуда оно взялось?» – часто спрашивает 16-летняя Настя Погорелова о большом ярко красном пятне на своем лице....</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="history-slider__item item-history">
+								<a href="/app/views/goodness_who-cares-separate.html">
+									<div class="item-history__image">
+										<img src="/public/pictures/main/history/history_1.png" alt="history_1">
+										<div class="item-history__age">8<br>лет</div>
+									</div>
+									<div class="item-history__info">
+										<h2>Березин Артем</h2>
+										<h3>г. Сочи</h3>
+										<p class="item-history__summ">мы помогли <span>200 000 ₽</span></p>
+										<p class="item-history__action">Купили Артему коляску и оплатили реабилитацию в центре.</p>
+										<div class="item-history__comments">
+											<h2>Артем рад изменениям в своей внешности</h2>
+											<p>«Мама, откуда оно взялось?» – часто спрашивает 16-летняя Настя Погорелова о большом ярко красном пятне на своем лице....</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="history-slider__item item-history">
+								<a href="/app/views/goodness_who-cares-separate.html">
+									<div class="item-history__image">
+										<img src="/public/pictures/main/history/history_2.png" alt="history_2">
+										<div class="item-history__age">11<br>лет</div>
+									</div>
+									<div class="item-history__info">
+										<h2>Корнопольцева Анастасия</h2>
+										<h3>г. Краснодар</h3>
+										<p class="item-history__summ">мы помогли <span>2 500 000 ₽</span></p>
+										<p class="item-history__action">Купили Артему коляску и оплатили реабилитацию в центре.</p>
+										<div class="item-history__comments">
+											<h2>Мама смотри как я могу!</h2>
+											<p>Сейчас Арсений активно развивается, его мышцы и кости становятся крепче.</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="history-slider__item item-history">
+								<a href="/app/views/goodness_who-cares-separate.html">
+									<div class="item-history__image">
+										<img src="/public/pictures/main/history/history_3.png" alt="history_3">
+										<div class="item-history__age">2<br>года</div>
+									</div>
+									<div class="item-history__info">
+										<h2>Хворцова Марина</h2>
+										<h3>г. Сочи</h3>
+										<p class="item-history__summ">мы помогли <span>800 000 ₽</span></p>
+										<p class="item-history__action">Купили Артему коляску и оплатили реабилитацию в центре.</p>
+										<div class="item-history__comments">
+											<h2>Артем рад изменениям в своей внешности</h2>
+											<p>«Мама, откуда оно взялось?» – часто спрашивает 16-летняя Настя Погорелова о большом ярко красном пятне на своем лице....</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="history-slider__item item-history">
+								<a href="/app/views/goodness_who-cares-separate.html">
+									<div class="item-history__image">
+										<img src="/public/pictures/main/history/history_1.png" alt="history_1">
+										<div class="item-history__age">8<br>лет</div>
+									</div>
+									<div class="item-history__info">
+										<h2>Березин Артем</h2>
+										<h3>г. Сочи</h3>
+										<p class="item-history__summ">мы помогли <span>200 000 ₽</span></p>
+										<p class="item-history__action">Купили Артему коляску и оплатили реабилитацию в центре.</p>
+										<div class="item-history__comments">
+											<h2>Артем рад изменениям в своей внешности</h2>
+											<p>«Мама, откуда оно взялось?» – часто спрашивает 16-летняя Настя Погорелова о большом ярко красном пятне на своем лице....</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="history-slider__item item-history">
+								<a href="/app/views/goodness_who-cares-separate.html">
+									<div class="item-history__image">
+										<img src="/public/pictures/main/history/history_2.png" alt="history_2">
+										<div class="item-history__age">11<br>лет</div>
+									</div>
+									<div class="item-history__info">
+										<h2>Корнопольцева Анастасия</h2>
+										<h3>г. Краснодар</h3>
+										<p class="item-history__summ">мы помогли <span>2 500 000 ₽</span></p>
+										<p class="item-history__action">Купили Артему коляску и оплатили реабилитацию в центре.</p>
+										<div class="item-history__comments">
+											<h2>Мама смотри как я могу!</h2>
+											<p>Сейчас Арсений активно развивается, его мышцы и кости становятся крепче.</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="history-slider__item item-history">
+								<a href="/app/views/goodness_who-cares-separate.html">
+									<div class="item-history__image">
+										<img src="/public/pictures/main/history/history_3.png" alt="history_3">
+										<div class="item-history__age">2<br>года</div>
+									</div>
+									<div class="item-history__info">
+										<h2>Хворцова Марина</h2>
+										<h3>г. Сочи</h3>
+										<p class="item-history__summ">мы помогли <span>800 000 ₽</span></p>
+										<p class="item-history__action">Купили Артему коляску и оплатили реабилитацию в центре.</p>
+										<div class="item-history__comments">
+											<h2>Артем рад изменениям в своей внешности</h2>
+											<p>«Мама, откуда оно взялось?» – часто спрашивает 16-летняя Настя Погорелова о большом ярко красном пятне на своем лице....</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="history-slider__item item-history">
+								<a href="/app/views/goodness_who-cares-separate.html">
+									<div class="item-history__image">
+										<img src="/public/pictures/main/history/history_1.png" alt="history_1">
+										<div class="item-history__age">8<br>лет</div>
+									</div>
+									<div class="item-history__info">
+										<h2>Березин Артем</h2>
+										<h3>г. Сочи</h3>
+										<p class="item-history__summ">мы помогли <span>200 000 ₽</span></p>
+										<p class="item-history__action">Купили Артему коляску и оплатили реабилитацию в центре.</p>
+										<div class="item-history__comments">
+											<h2>Артем рад изменениям в своей внешности</h2>
+											<p>«Мама, откуда оно взялось?» – часто спрашивает 16-летняя Настя Погорелова о большом ярко красном пятне на своем лице....</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="history-slider__item item-history">
+								<a href="/app/views/goodness_who-cares-separate.html">
+									<div class="item-history__image">
+										<img src="/public/pictures/main/history/history_2.png" alt="history_2">
+										<div class="item-history__age">11<br>лет</div>
+									</div>
+									<div class="item-history__info">
+										<h2>Корнопольцева Анастасия</h2>
+										<h3>г. Краснодар</h3>
+										<p class="item-history__summ">мы помогли <span>2 500 000 ₽</span></p>
+										<p class="item-history__action">Купили Артему коляску и оплатили реабилитацию в центре.</p>
+										<div class="item-history__comments">
+											<h2>Мама смотри как я могу!</h2>
+											<p>Сейчас Арсений активно развивается, его мышцы и кости становятся крепче.</p>
+										</div>
+									</div>
+								</a>
+							</div>
+							<div class="history-slider__item item-history">
+								<a href="/app/views/goodness_who-cares-separate.html">
+									<div class="item-history__image">
+										<img src="/public/pictures/main/history/history_3.png" alt="history_3">
+										<div class="item-history__age">2<br>года</div>
+									</div>
+									<div class="item-history__info">
+										<h2>Хворцова Марина</h2>
+										<h3>г. Сочи</h3>
+										<p class="item-history__summ">мы помогли <span>800 000 ₽</span></p>
+										<p class="item-history__action">Купили Артему коляску и оплатили реабилитацию в центре.</p>
+										<div class="item-history__comments">
+											<h2>Артем рад изменениям в своей внешности</h2>
+											<p>«Мама, откуда оно взялось?» – часто спрашивает 16-летняя Настя Погорелова о большом ярко красном пятне на своем лице....</p>
+										</div>
+									</div>
+								</a>
+							</div>
+						</div>
+						<div class="pagination">
+							<a href="#" class="pagination__previous-btn"><button></button></a>
+							<a href="#" class="pagination__page-btn"><button>1</button></a>
+							<a href="#" class="pagination__page-btn"><button>2</button></a>
+							<a href="#" class="pagination__page-btn"><button>3</button></a>
+							<a href="#" class="pagination__page-btn"><button>4</button></a>
+							<a href="#" class="pagination__page-btn"><button>5</button></a>
+							<a href="#" class="pagination__page-btn"><button>6</button></a>
+							<span class="pagination__page-ellipsis">...</span>
+							<a href="#" class="pagination__page-btn"><button>680</button></a>
+							<a href="#" class="pagination__next-btn"><button></button></a>
+						</div>
+					</div>
+				</section>
+
+				<!-- плашка снизу  (добалять класс active__bar)-->
+				<div class="main__bar lock-padding">
+					<img src="/public/pictures/heart.png" alt="heart">
+					<p>Отправьте СМС на номер <span>7715</span><br class="bar-br"> с сообщением «счастье *сумма*»</p>
+					<img src="/public/pictures/heart.png" alt="heart">
+				</div>
+
+			</main>
+
+			<footer class="footer">
+				<div class="footer__container _container">
+					<div class="footer__top">
+						<div class="footer__top-logo">
+							<a href="/app/views/goodness_main.html"><img src="/public/pictures/footer/logo.svg" alt="logo"></a>
+						</div>
+						<div class="footer__top-logo-mobile">
+							<a href="/app/views/goodness_main.html"><img src="/public/pictures/footer/logo-mobile.svg" alt="logo-mobile"></a>
+						</div>
+						<div class="footer__top-navigation footernav">
+							<div class="footernav__top">
+								<div class="footernav__top-link link-frame">
+									<a class="footernav__top-link-frame" href="/app/views/goodness_who-cares.html">
+										<img src="/public/pictures/footer/frame.svg" alt="frame" class="footernav__top-link-frame-white">
+										<img src="/public/pictures/footer/frame_hover.svg" alt="frame_hover" class="footernav__top-link-frame-hover">
+										<p>кому помогли</p>
+									</a>
+								</div>
+								<div class="footernav__top-link link-baby">
+									<a class="footernav__top-link-baby" href="/app/views/goodness_all-stories.html">
+										<img src="/public/pictures/footer/baby-boy.svg" alt="baby-boy" class="footernav__top-link-baby-white">
+										<img src="/public/pictures/footer/baby-boy_hover.svg" alt="baby-boy_hover" class="footernav__top-link-baby-hover">
+										<p>кому помочь</p>
+									</a>
+								</div>
+								<div class="footernav__top-link link-ambulance">
+									<a class="footernav__top-link-ambulance" href="/app/views/goodness_get-help.html">
+										<img src="/public/pictures/footer/ambulance.svg" alt="ambulance" class="footernav__top-link-ambulance-white">
+										<img src="/public/pictures/footer/ambulance_hover.svg" alt="ambulance_hover" class="footernav__top-link-ambulance-hover">
+										<p>получить помощь</p>
+									</a>
+								</div>
+							</div>
+							
+							<nav class="footernav__bot">
+								<ul class="footernav__bot-list">
+				            	<li class="footernav__bot-item">
+		                    		<a href="/app/views/goodness_fonds.html" class="footernav__bot-link">о фонде</a>
+		           				</li>
+				            	<li class="footernav__bot-item">
+		                    		<a href="/app/views/goodness_reports.html" class="footernav__bot-link">отчеты</a>
+		           				</li>
+				            	<li class="footernav__bot-item">
+		                    		<a href="/app/views/goodness_projects.html" class="footernav__bot-link">проекты</a>
+		           				</li>
+				            	<li class="footernav__bot-item">
+		                    		<a href="/app/views/goodness_news.html" class="footernav__bot-link">новости</a>
+		           				</li>
+				            	<li class="footernav__bot-item">
+		                    		<a href="/app/views/goodness_contacts.html" class="footernav__bot-link">контакты</a>
+		           				</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer__top-contact contact-footer">            
+							<div class="contact-footer__phone">
+								<a href="tel:88612034545"><img src="/public/pictures/footer/phone.svg" alt="phone"></a>
+	   						<a href="tel:88612034545">8(861)203-45-45</a>
+							</div>
+							<div class="contact-footer__address">
+	   						<p>г. Краснодар, ул. Красная, д.42, 1 этаж</p>
+							</div>
+							<div class="contact-footer__mail">
+								<a href="mailto:info@kray-dobra.ru"><img src="/public/pictures/footer/mail.svg" alt="mail"></a>
+	   						<a href="mailto:info@kray-dobra.ru">info@kray-dobra.ru</a>
+							</div>	
+						</div>
+					</div>
+
+					<div class="footer__bot">
+						<div class="footer__bot-policy">
+							<p>Политика конфиденциальности</p>
+						</div>
+						<div class="footer__bot-copyright">
+							<p>© 2022 Благотворительный фонд помощи детям «Край добра»</p>
+						</div>
+						<div class="footer__bot-designed">
+							<p>Разработано: design&code</p>
+						</div>
+						<div class="footer__bot-media">
+							<div class="footer__bot-scan">
+								<img src="/public/pictures/footer/qr.svg" alt="qr">
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>			
+
+		</div>
+
+
+		
+		<!-- Подключаем jQuery (без неё JS не работает) -->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+		<!-- Подключаем JS -->
+		<script src="/public/js/goodness_common.js"></script>
+		<script src="/public/js/goodness_header.js"></script>
+	</body>
+</html>

@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <!-- Чтобы на IOS номер телефона не изменял свой стиль -->
+   <meta name="format-detection" content="telephone=no">
+   <!-- Для подключения иконки к сайту -->
+   <link rel="shortcut icon" href="/public/pictures/goodness_icon.ico">
+   <link rel="stylesheet" href="/public/css/goodness_main.css?">
+   <title>Край Добра</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header lock-padding">
+         <div class="header__container _container">
+            <div class="header__logo">
+               <a href="/app/views/goodness_main.html">
+                  <div class="header__logo-img">
+                     <img class="logo__main" src="/public/pictures/header/logo_main.svg" alt="logo_main">
+                     <img class="logo__text-more" src="/public/pictures/header/logo_text.svg" alt="logo_text">
+                  </div>
+               </a>
+            </div>
+            <!-- Бургер на 776px -->
+            <div class="header__burger-block">
+               <div class="header__burger-button">
+                  <span></span>
+               </div>
+            </div>
+            <div class="header__menu">
+               <div class="header__menu-top help">
+                  <div class="help__mail">
+                     <a href="mailto:info@kray-dobra.ru"><img src="/public/pictures/header/mail.svg" alt="mail"></a>
+                     <a class="help__mail-mobile" href="mailto:info@kray-dobra.ru">info@kray-dobra.ru</a>
+                  </div>
+                  <div class="help__phone">
+                     <a href="tel:88612034545"><img src="/public/pictures/header/phone.svg" alt="phone"></a>
+                     <a class="help__mail-mobile" href="tel:88612034545">8 (861) 203-45-45</a>
+                  </div>
+                  <div class="help__donation donate-link-transparent"><a tabindex="1"
+                        href="/app/views/goodness_all-stories.html">хочу помочь</a></div>
+               </div>
+
+               <nav class="header__menu-bot navigation">
+                  <ul class="navigation__list">
+                     <li class="navigation__item">
+                        <a tabindex="2" href="/app/views/goodness_fonds.html" class="navigation__link">о фонде</a>
+                     </li>
+                     <li class="navigation__item">
+                        <a tabindex="3" href="/app/views/goodness_reports.html" class="navigation__link">отчеты</a>
+                     </li>
+                     <li class="navigation__item">
+                        <a tabindex="4" href="/app/views/goodness_projects.html" class="navigation__link">проекты</a>
+                     </li>
+                     <li class="navigation__item">
+                        <a tabindex="5" href="/app/views/goodness_news.html" class="navigation__link">новости</a>
+                     </li>
+                     <li class="navigation__item last-item">
+                        <a tabindex="6" href="/app/views/goodness_contacts.html" class="navigation__link">контакты</a>
+                     </li>
+                     <li class="navigation__item inactive-item">
+                        <a tabindex="4" href="/app/views/goodness_who-cares.html" class="navigation__link">кому
+                           помогли</a>
+                     </li>
+                     <li class="navigation__item inactive-item">
+                        <a tabindex="5" href="/app/views/goodness_all-stories.html" class="navigation__link">кому
+                           помочь</a>
+                     </li>
+                     <li class="navigation__item inactive-item">
+                        <a tabindex="6" href="/app/views/goodness_get-help.html" class="navigation__link">получить
+                           помощь</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </header>
+      <!-- Упрощенная шапка при скролле (только для дисплеев шире 1146px) -->
+      <header class="header-scroll lock-padding">
+         <div class="header-scroll__container _container">
+            <div class="header-scroll__logo">
+               <a href="/app/views/goodness_main.html">
+                  <div class="header__scroll-logo">
+                     <img src="/public/pictures/header/logo-scroll.svg" alt="logo-scroll"
+                        class="header__scroll-logo-img">
+                  </div>
+               </a>
+            </div>
+            <div class="header__menu-scroll">
+               <div class="header__menu-right help-right">
+                  <div class="help-right__interactive-icons">
+                     <div class="help__mail-interactive">
+                        <a href="mailto:info@kray-dobra.ru"><img src="/public/pictures/header/mail.svg" alt="mail"></a>
+                     </div>
+                     <div class="help__phone-interactive">
+                        <a href="tel:88612034545"><img src="/public/pictures/header/phone.svg" alt="phone"></a>
+                     </div>
+                  </div>
+                  <div class="help__donation donate-link-transparent"><a tabindex="1"
+                        href="/app/views/goodness_all-stories.html">хочу помочь</a></div>
+               </div>
+
+               <nav class="header__menu-left navigation">
+                  <ul class="navigation__list">
+                     <li class="navigation__item">
+                        <a tabindex="2" href="/app/views/goodness_fonds.html" class="navigation__link">о фонде</a>
+                     </li>
+                     <li class="navigation__item">
+                        <a tabindex="3" href="/app/views/goodness_reports.html" class="navigation__link">отчеты</a>
+                     </li>
+                     <li class="navigation__item">
+                        <a tabindex="4" href="/app/views/goodness_projects.html" class="navigation__link">проекты</a>
+                     </li>
+                     <li class="navigation__item">
+                        <a tabindex="5" href="/app/views/goodness_news.html" class="navigation__link">новости</a>
+                     </li>
+                     <li class="navigation__item last-item">
+                        <a tabindex="6" href="/app/views/goodness_contacts.html" class="navigation__link">контакты</a>
+                     </li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+      </header>
+
+      <main class="main">
+
+         <section class="main__banner-all _container">
+            <div class="main__banner-background">
+               <div class="main__banner-slider">
+                  <div class="banner-background__item">
+                     <img src="/public/pictures/main/header/back_1.png" alt="back_1">
+                     <img class="banner-background__img-mobile" src="/public/pictures/main/header/back_1-mobile.png"
+                        alt="back_1-mobile">
+                  </div>
+                  <div class="banner-background__item">
+                     <img src="/public/pictures/main/header/back_1.png" alt="back_1">
+                     <img class="banner-background__img-mobile" src="/public/pictures/main/header/back_1-mobile.png"
+                        alt="back_1-mobile">
+                  </div>
+                  <div class="banner-background__item">
+                     <img src="/public/pictures/main/header/back_1.png" alt="back_1">
+                     <img class="banner-background__img-mobile" src="/public/pictures/main/header/back_1-mobile.png"
+                        alt="back_1-mobile">
+                  </div>
+                  <div class="banner-background__item">
+                     <img src="/public/pictures/main/header/back_1.png" alt="back_1">
+                     <img class="banner-background__img-mobile" src="/public/pictures/main/header/back_1-mobile.png"
+                        alt="back_1-mobile">
+                  </div>
+               </div>
+            </div>
+
+            <div class="main__banner-content">
+               <!-- Контентная часть на фоне -->
+               <div class="main__banner-container _container">
+
+                  <div class="banner__content-main ban-content">
+                     <div class="ban-content__statistics">
+                        <div class="content__statistics-left">
+                           <div class="content__statistics-text">
+                              <h3>Помощь оказана</h3>
+                              <span>1081</span>
+                              <p>детям</p>
+                           </div>
+                           <!-- <div class="content__statistics-border"></div> -->
+                        </div>
+                        <div class="content__statistics-border"></div>
+                        <div class="content__statistics-rigth">
+                           <!-- <h3>Собрано средств</h3> -->
+                           <span>256 000 000</span>
+                           <span class="mobile__statistics-rigth">256</span>
+                           <p>млн. рублей</p>
+                        </div>
+                     </div>
+                     <div class="ban-content__title">
+                        <h1>АКЦИЯ<br>"1 МИНУТА НА ДОБРО" "1 МИНУТА НА ДОБРО" "1 МИНУТА НА ДОБРО" "1 МИНУТА НА ДОБРО" "1
+                           МИНУТА НА ДОБРО"</h1>
+                     </div>
+                     <div class="ban-content__sub-title">
+                        <h2>Для детей с разными диагнозами</h2>
+                     </div>
+                     <div class="ban-content-donate donate-link-no-transparent"><a tabindex="7"
+                           href="/app/views/goodness_donation.html">сделать пожертвование</a></div>
+                  </div>
+
+                  <div class="banner__content-main ban-content">
+                     <div class="ban-content__statistics">
+                        <div class="content__statistics-left">
+                           <div class="content__statistics-text">
+                              <h3>Помощь оказана</h3>
+                              <span>980</span>
+                              <p>детям</p>
+                           </div>
+                        </div>
+                        <div class="content__statistics-border"></div>
+                        <div class="content__statistics-rigth">
+                           <h3>Собрано средств</h3>
+                           <span>306 000 000</span>
+                           <span class="mobile__statistics-rigth">306</span>
+                           <p>млн. рублей</p>
+                        </div>
+                     </div>
+                     <div class="ban-content__title">
+                        <h1>самый лучший<br>фонд помощи</h1>
+                     </div>
+                     <div class="ban-content__sub-title">
+                        <h2>Для детей с разными диагнозами</h2>
+                     </div>
+                     <div class="ban-content-donate donate-link-no-transparent"><a tabindex="7"
+                           href="/app/views/goodness_donation.html">сделать пожертвование</a></div>
+                  </div>
+
+                  <div class="banner__content-main ban-content">
+                     <div class="ban-content__statistics">
+                        <div class="content__statistics-left">
+                           <div class="content__statistics-text">
+                              <h3>Помощь оказана</h3>
+                              <span>3976</span>
+                              <p>детям</p>
+                           </div>
+                        </div>
+                        <div class="content__statistics-border"></div>
+                        <div class="content__statistics-rigth">
+                           <h3>Собрано средств</h3>
+                           <span>222 000 000</span>
+                           <span class="mobile__statistics-rigth">222</span>
+                           <p>млн. рублей</p>
+                        </div>
+                     </div>
+                     <div class="ban-content__title">
+                        <h1>фонд помощи<br>благотворительный</h1>
+                     </div>
+                     <div class="ban-content__sub-title">
+                        <h2>Для детей с разными диагнозами</h2>
+                     </div>
+                     <div class="ban-content-donate donate-link-no-transparent"><a tabindex="7"
+                           href="/app/views/goodness_donation.html">сделать пожертвование</a></div>
+                  </div>
+
+                  <div class="banner__content-main ban-content">
+                     <div class="ban-content__statistics">
+                        <div class="content__statistics-left">
+                           <div class="content__statistics-text">
+                              <h3>Помощь оказана</h3>
+                              <span>101</span>
+                              <p>детям</p>
+                           </div>
+                        </div>
+                        <div class="content__statistics-border"></div>
+                        <div class="content__statistics-rigth">
+                           <h3>Собрано средств</h3>
+                           <span>140 000 000</span>
+                           <span class="mobile__statistics-rigth">140</span>
+                           <p>млн. рублей</p>
+                        </div>
+                     </div>
+                     <div class="ban-content__title">
+                        <h1>наш фонд -<br>фонд помощи</h1>
+                     </div>
+                     <div class="ban-content__sub-title">
+                        <h2>Для детей с разными диагнозами</h2>
+                     </div>
+                     <div class="ban-content-donate donate-link-no-transparent"><a tabindex="7"
+                           href="/app/views/goodness_donation.html">сделать пожертвование</a></div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="main__payment">
+            <div class="main__payment-container _container">
+               <div class="main__payment-amount amount">
+                  <div class="amount__choice">
+                     <ul class="amount__choice-items">
+                        <li tabindex="8" class="amount__choice-item">300 ₽</li>
+                        <li tabindex="9" class="amount__choice-item">500 ₽</li>
+                        <li tabindex="10" class="amount__choice-item">1000 ₽</li>
+                        <li tabindex="11" class="amount__choice-item">2000 ₽</li>
+                        <li tabindex="12" class="amount__choice-item">3000 ₽</li>
+                        <li tabindex="13" class="amount__choice-item">другая сумма</li>
+                     </ul>
+                  </div>
+                  <div class="amount__button">
+                     <div class="amount__button-help donate-link-no-transparent"><a tabindex="14"
+                           href="/app/views/goodness_donation.html">помочь ребенку</a></div>
+                     <p>Соглашаюсь с <a tabindex="15" href="/app/views/goodness_offer.html">условиями оферты</a></p>
+                  </div>
+               </div>
+
+               <div class="main__payment-method method">
+                  <p>Оплата через</p>
+                  <div class="method__variable">
+                     <ul class="method__variable-items">
+                        <li class="method__variable-item"><img src="/public/pictures/main/payment/visa.svg" alt="visa">
+                        </li>
+                        <li class="method__variable-item"><img src="/public/pictures/main/payment/mastercard.svg"
+                              alt="mastercard"></li>
+                        <li class="method__variable-item"><img src="/public/pictures/main/payment/sber.svg" alt="sber">
+                        </li>
+                        <li class="method__variable-item"><img src="/public/pictures/main/payment/alfa.svg" alt="alfa">
+                        </li>
+                        <li class="method__variable-item"><img src="/public/pictures/main/payment/yandex.svg"
+                              alt="yandex"></li>
+                     </ul>
+                  </div>
+                  <a tabindex="16" href="/app/views/goodness_donation.html">Другие способы оплаты</a>
+               </div>
+            </div>
+         </section>
+
+         <section class="main__review">
+            <div class="main__review-container _container">
+               <div class="main__review-info info-review">
+                  <div class="info-review__content">
+                     <div class="info-review__shell">
+                        <div class="info-reveiw__body">
+                           <h1 class="info-review__title">благотворительный фонд помощи детям <br><span>край
+                                 добра</span></h1>
+                           <h2 class="info-review__subtitle">Наши подопечные борются с самыми разными заболеваниями —
+                           </h2>
+                           <div class="info-review__text">
+                              <p>Онкология, ДЦП, сахарный диабет, нарушения зрения, слуха, поражения центральной нервной
+                                 системы, редкие генетические заболевания и сложнейшие травмы.</p>
+                              <p>Из собранных средств мы оплачиваем проведение хирургических операций курсы реабилитации
+                                 и обследования, жизненно необходимые препараты, медицинские приборы, технические
+                                 средства реабилитации, авиа и жд билеты к месту лечения ребенка</p>
+                           </div>
+                           <div class="info-review__detailed donate-link-transparent">
+                              <a tabindex="17" href="/app/views/goodness_fonds.html">подробнее о фонде</a>
+                           </div>
+                        </div>
+                        <div class="main__review-info-background__img-mobile">
+                           <img src="/public/pictures/main/review/group-mobile.svg" alt="main_frame">
+                        </div>
+                     </div>
+
+                  </div>
+                  <!-- блоки с картинками будут позиционироваться относительно родителя -->
+                  <div class="main__review-image_1">
+                     <img src="/public/pictures/main/review/child_1.png" alt="child_1">
+                  </div>
+                  <div class="main__review-image_2">
+                     <img src="/public/pictures/main/review/child_2.png" alt="child_2">
+                  </div>
+                  <div class="main__review-image_3">
+                     <img src="/public/pictures/main/review/child_3.png" alt="child_3">
+                  </div>
+                  <div class="main__review-image_4">
+                     <img src="/public/pictures/main/review/child_4.png" alt="child_4">
+                  </div>
+                  <div class="main__review-image_5">
+                     <img src="/public/pictures/main/review/child_5.png" alt="child_5">
+                  </div>
+                  <div class="main__review-logo">
+                     <img src="/public/pictures/main/review/logo.svg" alt="logo">
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="main__filter">
+            <div class="main__filter-container _container">
+               <div class="main__filter-header  main-header__all">
+                  <div class="filter-header__title main-header__title">
+                     <h1>нужна помощь</h1>
+                  </div>
+                  <div class="filter-header__all-history main-header__link">
+                     <a href="/app/views/goodness_all-stories.html">все истории</a>
+                  </div>
+               </div>
+            </div>
+            <div class="main__filter-background">
+               <form class="main__filter-container _container">
+                  <div class="main__filter-content filter-content">
+                     <div class="filter-content__clear">
+                        <button id="filter_reset" type="reset">Сбросить фильтры</button>
+                     </div>
+                     <div class="filter-content__variables">
+                        <div class="filter-content__variable">
+                           <div class="variable__title">
+                              <h2>выберите возраст <span>от 0 до 16 лет</span></h2>
+                           </div>
+                           <div class="variable__slider-block">
+                              <div class="variable__slider-block-values">
+                                 <span id="range_1">
+                                    <!-- 2 -->
+                                 </span>
+                                 <span> - </span>
+                                 <span id="range_2">
+                                    <!-- 10 -->
+                                 </span>
+                              </div>
+                              <div id="slider-track" class="variable__slider-block-track">
+                                 <div class="slider-block-track__less">
+                                    <!-- здесь значение наименьшего -->
+                                    0
+                                 </div>
+                                 <div class="slider-block-track__greatest">
+                                    <!-- здесь значение наибольшего -->
+                                    16
+                                 </div>
+                              </div>
+                              <input type="range" min="5" max="10" value="6" id="slider-1" oninput="slideOne()">
+                              <input type="range" min="5" max="10" value="8" id="slider-2" oninput="slideTwo()">
+                           </div>
+                        </div>
+                        <div class="filter-content__variable">
+                           <div class="select__header">
+                              <h2>диагноз</h2>
+                           </div>
+                           <div id="select_1" tabindex="" class="select__field">
+                              <div class="select__field-value-1 js__selection-field">
+                                 <span class="value__select-current">Не выбрано</span>
+                                 <div class="current-value__arrow-1">
+                                    <img src="/public/pictures/main/filter/drop-down.svg" alt="drop-down">
+                                 </div>
+                              </div>
+                              <div class="select__field-items-1">
+                                 <div class="select__field-item">Не выбрано</div>
+                                 <div class="select__field-item">Детский целебральный паралич</div>
+                                 <div class="select__field-item">Сахарный диабет</div>
+                                 <div class="select__field-item">Проблемы со слухом</div>
+                                 <div class="select__field-item">Врожденная слепота</div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="filter-content__variable">
+                           <div class="select__header">
+                              <h2>район/город</h2>
+                           </div>
+                           <!-- <div id="select_2" tabindex="20" class="select__field"> -->
+                           <div id="select_1" tabindex="20" class="select__field">
+                              <div class="select__field-value-1 js__selection-field">
+                                 <!-- <div class="select__field-value-2 js__selection-field"> -->
+                                 <span class="value__select-current">Не выбрано</span>
+                                 <div class="current-value__arrow-1">
+                                    <!-- <div class="current-value__arrow-2"> -->
+                                    <img src="/public/pictures/main/filter/drop-down.svg" alt="drop-down">
+                                 </div>
+                              </div>
+                              <div class="select__field-items-1">
+                                 <!-- <div class="select__field-items-2"> -->
+                                 <div value="1" class="select__field-item">Не выбрано</div>
+                                 <div value="2" class="select__field-item">г. Краснодар</div>
+                                 <div value="3" class="select__field-item">г. Майкоп</div>
+                                 <div value="4" class="select__field-item">г. Темрюк</div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </form>
+            </div>
+         </section>
+
+         <section class="main__child-cards">
+            <div class="main__child-cards-container _container">
+               <div class="child-cards__items">
+                  <div class="child-cards__item">
+                     <div class="child-cards__image">
+                        <img src="/public/pictures/main/child-cards/card_1.png" alt="card_1">
+                        <div class="child-cards__age">1<br>год</div>
+                     </div>
+                     <div class="child-cards__info">
+                        <h2>Богосславская<br> Анастасия</h2>
+                        <h3>г. Сочи</h3>
+                        <p>Диагноз:</p>
+                        <span>врожденный порок развития почек</span>
+                        <div class="child-cards__help">
+                           <div class="child-cards__link donate-link-transparent"><a tabindex=""
+                                 href="/app/views/goodness_help-baby.html">помочь</a></div>
+                           <a href="/app/views/goodness_baby-story.html">История ребенка</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="child-cards__item">
+                     <div class="child-cards__image">
+                        <img src="/public/pictures/main/child-cards/card_2.png" alt="card_2">
+                        <div class="child-cards__age">3<br>года</div>
+                     </div>
+                     <div class="child-cards__info">
+                        <h2>Александова<br> Алена</h2>
+                        <h3>г. Краснодар</h3>
+                        <p>Диагноз:</p>
+                        <span>вторичный центральный дефект межпредсердной перегородки</span>
+                        <div class="child-cards__help">
+                           <div class="child-cards__link donate-link-transparent"><a tabindex=""
+                                 href="/app/views/goodness_help-baby.html">помочь</a></div>
+                           <a href="/app/views/goodness_baby-story.html">История ребенка</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="child-cards__item">
+                     <div class="child-cards__image">
+                        <img src="/public/pictures/main/child-cards/card_3.png" alt="card_3">
+                        <div class="child-cards__age">7<br>лет</div>
+                     </div>
+                     <div class="child-cards__info">
+                        <h2>Яковлева<br> Диана</h2>
+                        <h3>г. Сочи</h3>
+                        <p>Диагноз:</p>
+                        <span>синдром Гельденхара, гипоплазия ушной раковины справа,атрезия наружного слухового
+                           прохода</span>
+                        <div class="child-cards__help">
+                           <div class="child-cards__link donate-link-transparent"><a tabindex=""
+                                 href="/app/views/goodness_help-baby.html">помочь</a></div>
+                           <a href="/app/views/goodness_baby-story.html">История ребенка</a>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="child-cards__item">
+                     <div class="child-cards__image">
+                        <img src="/public/pictures/main/child-cards/card_4.png" alt="card_4">
+                        <div class="child-cards__age">8<br>лет</div>
+                     </div>
+                     <div class="child-cards__info">
+                        <h2>Черкашина<br> Милана</h2>
+                        <h3>г. Сочи</h3>
+                        <p>Диагноз:</p>
+                        <span>нейробластома забрюшинного пространства</span>
+                        <div class="child-cards__help">
+                           <div class="child-cards__link donate-link-transparent"><a tabindex=""
+                                 href="/app/views/goodness_help-baby.html">помочь</a></div>
+                           <a href="/app/views/goodness_baby-story.html">История ребенка</a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="main__how-to-get-help">
+            <div class="main__how-to-get-help-background">
+               <img src="/public/pictures/main/how-to-get-help/cover.png" alt="cover">
+            </div>
+            <div class="main__how-to-get-help-container _container">
+               <div class="how-to-get-help__content-radius"></div>
+               <div class="how-to-get-help__content">
+                  <h1 class="get-help__content-title">как получить помощь</h1>
+                  <h2 class="get-help__content-subtitle">Благотворительный фонд «Край Добра»<br>оказывает помощь лицам
+                     до 18 лет, проживающим на территории Краснодарского края</h2>
+                  <!-- <div class="get-help__content-list"> -->
+                  <!-- 								<ul class="get-help__list">
+									<li class="get-help__item">Проживающим на территории Краснодарского края</li>
+								</ul> -->
+                  <!-- 								<ul class="get-help__list">
+									<li class="get-help__item">Проживающим на территории Краснодарского края</li>
+									<li class="get-help__item">Нуждающихся в лечении в медицинских учреждениях</li>
+								</ul> -->
+                  <!-- </div> -->
+                  <div class="get-help__content-buttons">
+                     <div class="get-help__content-button-get donate-link-no-transparent"><a tabindex="14"
+                           href="/app/views/goodness_get-help.html">подать заявку</a></div>
+                     <!-- <div class="get-help__content-button-give donate-link-transparent"><a tabindex="" href="/app/views/goodness_get-help.html">как подать заявку</a></div> -->
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="main__history">
+            <div class="main__history-container _container">
+               <div class="main__history-header main-header__all">
+                  <div class="history-header__title main-header__title">
+                     <h1>вы уже помогли</h1>
+                  </div>
+                  <div class="history-header__all-history main-header__link">
+                     <a href="/app/views/goodness_who-cares.html">все истории успеха</a>
+                  </div>
+               </div>
+               <div class="main__history-slider history-slider">
+                  <div class="history-slider__items">
+                     <div class="history-slider__item item-history">
+                        <a href="/app/views/goodness_who-cares-separate.html">
+                           <div class="item-history__image">
+                              <img src="/public/pictures/main/history/history_1.png" alt="history_1">
+                              <div class="item-history__age">8<br> лет</div>
+                           </div>
+                           <div class="item-history__info">
+                              <h2>Березин Артем</h2>
+                              <h3>г. Сочи</h3>
+                              <p class="item-history__summ">мы помогли <span>200 000 ₽</span></p>
+                              <p class="item-history__action">Купили Артему коляску и оплатили реабилитацию в центре.
+                              </p>
+                              <div class="item-history__comments">
+                                 <h2>Артем рад изменениям в своей внешности</h2>
+                                 <p>«Мама, откуда оно взялось?» – часто спрашивает 16-летняя Настя Погорелова о большом
+                                    ярко красном пятне на своем лице....</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="history-slider__item item-history">
+                        <a href="/app/views/goodness_who-cares-separate.html">
+                           <div class="item-history__image">
+                              <img src="/public/pictures/main/history/history_2.png" alt="history_2">
+                              <div class="item-history__age">11<br> лет</div>
+                           </div>
+                           <div class="item-history__info">
+                              <h2>Корнопольцева Анастасия</h2>
+                              <h3>г. Краснодар</h3>
+                              <p class="item-history__summ">мы помогли <span>2 500 000 ₽</span></p>
+                              <p class="item-history__action">Купили Артему коляску и оплатили реабилитацию в центре.
+                              </p>
+                              <div class="item-history__comments">
+                                 <h2>Мама смотри как я могу!</h2>
+                                 <p>Сейчас Арсений активно развивается, его мышцы и кости становятся крепче.</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="history-slider__item item-history">
+                        <a href="/app/views/goodness_who-cares-separate.html">
+                           <div class="item-history__image">
+                              <img src="/public/pictures/main/history/history_3.png" alt="history_3">
+                              <div class="item-history__age">2<br> года</div>
+                           </div>
+                           <div class="item-history__info">
+                              <h2>Хворцова Марина</h2>
+                              <h3>г. Сочи</h3>
+                              <p class="item-history__summ">мы помогли <span>800 000 ₽</span></p>
+                              <p class="item-history__action">Купили Артему коляску и оплатили реабилитацию в центре.
+                              </p>
+                              <div class="item-history__comments">
+                                 <h2>Артем рад изменениям в своей внешности</h2>
+                                 <p>«Мама, откуда оно взялось?» – часто спрашивает 16-летняя Настя Погорелова о большом
+                                    ярко красном пятне на своем лице....</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="history-slider__item item-history">
+                        <a href="/app/views/goodness_who-cares-separate.html">
+                           <div class="item-history__image">
+                              <img src="/public/pictures/main/history/history_1.png" alt="history_1">
+                              <div class="item-history__age">8<br> лет</div>
+                           </div>
+                           <div class="item-history__info">
+                              <h2>Березин Артем</h2>
+                              <h3>г. Сочи</h3>
+                              <p class="item-history__summ">мы помогли <span>200 000 ₽</span></p>
+                              <p class="item-history__action">Купили Артему коляску и оплатили реабилитацию в центре.
+                              </p>
+                              <div class="item-history__comments">
+                                 <h2>Артем рад изменениям в своей внешности</h2>
+                                 <p>«Мама, откуда оно взялось?» – часто спрашивает 16-летняя Настя Погорелова о большом
+                                    ярко красном пятне на своем лице....</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="history-slider__item item-history">
+                        <a href="/app/views/goodness_who-cares-separate.html">
+                           <div class="item-history__image">
+                              <img src="/public/pictures/main/history/history_2.png" alt="history_2">
+                              <div class="item-history__age">11<br> лет</div>
+                           </div>
+                           <div class="item-history__info">
+                              <h2>Корнопольцева Анастасия</h2>
+                              <h3>г. Краснодар</h3>
+                              <p class="item-history__summ">мы помогли <span>2 500 000 ₽</span></p>
+                              <p class="item-history__action">Купили Артему коляску и оплатили реабилитацию в центре.
+                              </p>
+                              <div class="item-history__comments">
+                                 <h2>Мама смотри как я могу!</h2>
+                                 <p>Сейчас Арсений активно развивается, его мышцы и кости становятся крепче.</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                     <div class="history-slider__item item-history">
+                        <a href="/app/views/goodness_who-cares-separate.html">
+                           <div class="item-history__image">
+                              <img src="/public/pictures/main/history/history_3.png" alt="history_3">
+                              <div class="item-history__age">2<br> года</div>
+                           </div>
+                           <div class="item-history__info">
+                              <h2>Хворцова Марина</h2>
+                              <h3>г. Сочи</h3>
+                              <p class="item-history__summ">мы помогли <span>800 000 ₽</span></p>
+                              <p class="item-history__action">Купили Артему коляску и оплатили реабилитацию в центре.
+                              </p>
+                              <div class="item-history__comments">
+                                 <h2>Артем рад изменениям в своей внешности</h2>
+                                 <p>«Мама, откуда оно взялось?» – часто спрашивает 16-летняя Настя Погорелова о большом
+                                    ярко красном пятне на своем лице....</p>
+                              </div>
+                           </div>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="main__news">
+            <div class="main__news-container _container">
+               <div class="main__news-header main-header__all">
+                  <div class="news-header__title main-header__title">
+                     <h1>новости</h1>
+                  </div>
+                  <div class="news-header__all-news main-header__link">
+                     <a href="/app/views/goodness_news.html">все новости</a>
+                  </div>
+               </div>
+
+               <div class="main__news-issues">
+
+                  <div class="news-issues__top">
+                     <div class="issues__top-main">
+                        <div class="issues__top-main-image">
+                           <a href="/app/views/goodness_news-separate.html"><img
+                                 src="/public/pictures/main/news/main_right.png" alt="main"></a>
+                        </div>
+                        <div class="issues__top-main-link">
+                           <div class="issues-main-link__date">
+                              <p>13 Июня 2021</p>
+                           </div>
+                           <div class="issues-main-link__link">
+                              <a href="/app/views/goodness_news-separate.html">о нас в сми</a>
+                           </div>
+                        </div>
+                        <div class="issues__top-main-intro">
+                           <p>В Международный день детей больных раком строительная компания ССК подарили детям
+                              праздничное настроение!</p>
+                        </div>
+                     </div>
+                     <div class="issues__top-sidebar">
+                        <div class="top-sidebar-items">
+                           <a href="/app/views/goodness_news-separate.html" class="top-sidebar-item">
+                              <div class="top-sidebar-item__date">
+                                 <p>25 Мая 2021</p>
+                              </div>
+                              <div class="top-sidebar-item__text">
+                                 <span>Минтруд рекомендовал перевести на удаленку максимальное число...</span>
+                              </div>
+                           </a>
+                           <a href="/app/views/goodness_news-separate.html" class="top-sidebar-item">
+                              <div class="top-sidebar-item__date">
+                                 <p>01 Июля 2021</p>
+                              </div>
+                              <div class="top-sidebar-item__text">
+                                 <span>Сегодня день рождения отмечает Илья Майоров из Краснодара.</span>
+                              </div>
+                           </a>
+                           <a href="/app/views/goodness_news-separate.html" class="top-sidebar-item">
+                              <div class="top-sidebar-item__date">
+                                 <p>01 Июня 2021</p>
+                              </div>
+                              <div class="top-sidebar-item__text">
+                                 <span>Первый урок в новом году прошел в Театральной мастерской...</span>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="news-issues__bottom">
+                     <div class="news-issues__bottom-items">
+                        <div class="bottom-issues__item">
+                           <a href="/app/views/goodness_news-separate.html" class="bottom-issues__item-image">
+                              <img src="/public/pictures/main/news/news_1.png" alt="news_1">
+                              <div class="bottom-issues__item-data">
+                                 <div class="data-issues__item-date">
+                                    <p>26 Апреля 2021</p>
+                                 </div>
+                                 <div class="data-issues__item-category">
+                                    <p>дети</p>
+                                 </div>
+                              </div>
+                           </a>
+                           <div class="bottom-issues__item-intro">
+                              <div class="bottom-issues__item-intro-text">
+                                 <h2>Сегодня день рождения отмечает Илья Майоров из Краснодара.</h2>
+                                 <p>Подопечному фонда «Край добра» исполнилось 10 лет!</p>
+                              </div>
+                              <div class="bottom-issues__item-intro-link">
+                                 <a href="/app/views/goodness_news-separate.html">Читать новость</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="bottom-issues__item">
+                           <a href="/app/views/goodness_news-separate.html" class="bottom-issues__item-image">
+                              <img src="/public/pictures/main/news/news_2.png" alt="news_2">
+                              <div class="bottom-issues__item-data">
+                                 <div class="data-issues__item-date">
+                                    <p>26 Апреля 2021</p>
+                                 </div>
+                                 <div class="data-issues__item-category">
+                                    <p>о фонде</p>
+                                 </div>
+                              </div>
+                           </a>
+                           <div class="bottom-issues__item-intro">
+                              <div class="bottom-issues__item-intro-text">
+                                 <h2>Сегодня международный день «Спасибо».</h2>
+                                 <p>Отличный повод искренне поблагодарить наших друзей, благотворителей и всех, кто
+                                    помогает детям фонда бороться с тяжелым недугом, и прикладывает большие усилия...
+                                 </p>
+                              </div>
+                              <div class="bottom-issues__item-intro-link">
+                                 <a href="/app/views/goodness_news-separate.html">Читать новость</a>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="bottom-issues__item specialized-issues">
+                           <a href="/app/views/goodness_news-separate.html" class="specialized-issues__item-image">
+                              <img src="/public/pictures/main/news/news_3_right.png" alt="news_3">
+                              <div class="specialized-issues__item-intro">
+                                 <p>Первый урок в новом году прошел в Театральной мастерской.</p>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="main__projects">
+            <div class="main__projects-container _container">
+               <div class="main__projects-header main-header__all">
+                  <div class="projects-header__title main-header__title">
+                     <h1>проекты фонда</h1>
+                  </div>
+                  <div class="projects-header__all-projects main-header__link">
+                     <a href="/app/views/goodness_projects.html">все проекты</a>
+                  </div>
+               </div>
+
+               <div class="main__projects-content">
+                  <div class="project-content__items">
+
+                     <div class="project-content__item project-item">
+                        <div class="project-item__info project-info">
+                           <div class="project-info__date">
+                              <p>Январь 2022</p>
+                           </div>
+                           <div class="project-info__intro">
+                              <h2>новогодний благотворительный вечер</h2>
+                              <p>В канун самого любимого всеми праздника мы традиционно устраиваем масштабное
+                                 благотворительное мероприятие</p>
+                           </div>
+                           <div class="project-info__link donate-link-transparent">
+                              <a href="/app/views/goodness_projects-separate.html">подробнее</a>
+                           </div>
+                        </div>
+                        <div class="project-item__image">
+                           <img src="/public/pictures/main/projects/project_1.png" alt="project_1">
+                        </div>
+                     </div>
+
+                     <div class="project-content__item project-item">
+                        <div class="project-item__info project-info">
+                           <div class="project-info__date">
+                              <p>Декабрь 2021</p>
+                           </div>
+                           <div class="project-info__intro">
+                              <h2>телерадиомарафоны в помощь детям</h2>
+                              <p>Самая всенародная и масштабная акция фонда</p>
+                           </div>
+                           <div class="project-info__link donate-link-transparent">
+                              <a href="/app/views/goodness_projects-separate.html">подробнее</a>
+                           </div>
+                        </div>
+                        <div class="project-item__image">
+                           <img src="/public/pictures/main/projects/test.jpg" alt="project_2">
+                        </div>
+                     </div>
+
+                     <div class="project-content__item project-item">
+                        <div class="project-item__info project-info">
+                           <div class="project-info__date">
+                              <p>Январь 2022</p>
+                           </div>
+                           <div class="project-info__intro">
+                              <h2>эквалайзер</h2>
+                              <p>Образовательный проект для детей с нарушением слуха</p>
+                           </div>
+                           <div class="project-info__link donate-link-transparent">
+                              <a href="/app/views/goodness_projects-separate.html">подробнее</a>
+                           </div>
+                        </div>
+                        <div class="project-item__image">
+                           <img src="/public/pictures/main/projects/project_3.png" alt="project_3">
+                        </div>
+                     </div>
+
+                     <div class="project-content__item project-item">
+                        <div class="project-item__info project-info">
+                           <div class="project-info__date">
+                              <p>Январь 2022</p>
+                           </div>
+                           <div class="project-info__intro">
+                              <h2>выходные в больнице</h2>
+                              <p>Проект создан для детей, которые вынуждены долгое время находиться в больнице</p>
+                           </div>
+                           <div class="project-info__link donate-link-transparent">
+                              <a href="/app/views/goodness_projects-separate.html">подробнее</a>
+                           </div>
+                        </div>
+                        <div class="project-item__image">
+                           <img src="/public/pictures/main/projects/project_4.png" alt="project_4">
+                        </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="main__reports">
+            <div class="main__reports-container _container">
+               <div class="main__reports-header main-header__all">
+                  <div class="reports-header__title main-header__title">
+                     <h1>отчеты фонда</h1>
+                  </div>
+                  <div class="reports-header__all-reports main-header__link">
+                     <a href="/app/views/goodness_reports.html">все отчеты</a>
+                  </div>
+               </div>
+               <div class="main__reports-files">
+                  <div class="reports-files__items">
+                     <!-- ссылка/карточка для файла -->
+                     <a download href="" class="reports-files__item">
+                        <div class="reports-files__item-image">
+                           <img src="/public/pictures/main/reports/file_icon.png" alt="file_icon">
+                           <p>Pdf 128kb</p>
+                        </div>
+                        <div class="reports-files__item-date">
+                           <h2>2020</h2>
+                           <p>1 полугодие</p>
+                        </div>
+                     </a>
+                     <a download href="" class="reports-files__item">
+                        <div class="reports-files__item-image">
+                           <img src="/public/pictures/main/reports/file_icon.png" alt="file_icon">
+                           <p>Pdf 128kb</p>
+                        </div>
+                        <div class="reports-files__item-date">
+                           <h2>2020</h2>
+                           <p>1 полугодие</p>
+                        </div>
+                     </a>
+                     <a download href="" class="reports-files__item">
+                        <div class="reports-files__item-image">
+                           <img src="/public/pictures/main/reports/file_icon.png" alt="file_icon">
+                           <p>Pdf 128kb</p>
+                        </div>
+                        <div class="reports-files__item-date">
+                           <h2>2020</h2>
+                           <p>1 полугодие</p>
+                        </div>
+                     </a>
+                     <a download href="" class="reports-files__item">
+                        <div class="reports-files__item-image">
+                           <img src="/public/pictures/main/reports/file_icon.png" alt="file_icon">
+                           <p>Pdf 128kb</p>
+                        </div>
+                        <div class="reports-files__item-date">
+                           <h2>2020</h2>
+                           <p>1 полугодие</p>
+                        </div>
+                     </a>
+                     <a download href="" class="reports-files__item">
+                        <div class="reports-files__item-image">
+                           <img src="/public/pictures/main/reports/file_icon.png" alt="file_icon">
+                           <p>Pdf 128kb</p>
+                        </div>
+                        <div class="reports-files__item-date">
+                           <h2>2020</h2>
+                           <p>1 полугодие</p>
+                        </div>
+                     </a>
+                     <a download href="" class="reports-files__item">
+                        <div class="reports-files__item-image">
+                           <img src="/public/pictures/main/reports/file_icon.png" alt="file_icon">
+                           <p>Pdf 128kb</p>
+                        </div>
+                        <div class="reports-files__item-date">
+                           <h2>2020</h2>
+                           <p>1 полугодие</p>
+                        </div>
+                     </a>
+                  </div>
+               </div>
+            </div>
+         </section>
+
+         <section class="main__partners">
+            <div class="main__partners-container _container">
+               <div class="main__partners-header main-header__all">
+                  <div class="partners-header__title main-header__title">
+                     <h1>стать партнером фонда</h1>
+                  </div>
+               </div>
+               <div class="main__partners-slider partners-slider">
+                  <div class="partners-slider__items">
+
+                     <div class="partners-slider__item item-partners">
+                        <div class="item-partners__logo">
+                           <img src="/public/pictures/main/partners/logo_1.png" alt="logo_1">
+                        </div>
+                        <h2 class="item-partners__name">Центр юридических и бухгалтерских услуг "Abat Group Центр
+                           юридических и бухгалтерских услуг "Abat Group""</h2>
+                     </div>
+                     <div class="partners-slider__item item-partners">
+                        <div class="item-partners__logo">
+                           <img src="/public/pictures/main/partners/test.jpg" alt="logo_1">
+                        </div>
+                        <h2 class="item-partners__name">Центр юридических и бухгалтерских услуг "Abat Group Центр
+                           юридических и бухгалтерских услуг "Abat Group""</h2>
+                     </div>
+                     <div class="partners-slider__item item-partners">
+                        <div class="item-partners__logo">
+                           <img src="/public/pictures/main/partners/test_2.jpg" alt="logo_1">
+                        </div>
+                        <h2 class="item-partners__name">Центр юридических и бухгалтерских услуг "Abat Group Центр
+                           юридических и бухгалтерских услуг "Abat Group""</h2>
+                     </div>
+                     <div class="partners-slider__item item-partners">
+                        <div class="item-partners__logo">
+                           <img src="/public/pictures/main/partners/logo_2.png" alt="logo_2">
+                        </div>
+                        <h2 class="item-partners__name">Cити центр</h2>
+                     </div>
+                     <div class="partners-slider__item item-partners">
+                        <div class="item-partners__logo">
+                           <img src="/public/pictures/main/partners/logo_3.png" alt="logo_3">
+                        </div>
+                        <h2 class="item-partners__name">Европейский жилой комплекс</h2>
+                     </div>
+                     <div class="partners-slider__item item-partners">
+                        <div class="item-partners__logo">
+                           <img src="/public/pictures/main/partners/logo_4.png" alt="logo_4">
+                        </div>
+                        <h2 class="item-partners__name">ООО "ДИМ КОФЕ"</h2>
+                     </div>
+                     <div class="partners-slider__item item-partners">
+                        <div class="item-partners__logo">
+                           <img src="/public/pictures/main/partners/logo_5.png" alt="logo_5">
+                        </div>
+                        <h2 class="item-partners__name">ООО Медтроник</h2>
+                     </div>
+                     <div class="partners-slider__item item-partners">
+                        <div class="item-partners__logo">
+                           <img src="/public/pictures/main/partners/logo_6.png" alt="logo_6">
+                        </div>
+                        <h2 class="item-partners__name">Санаторий «Горячий Ключ»</h2>
+                     </div>
+                     <div class="partners-slider__item item-partners">
+                        <div class="item-partners__logo">
+                           <img src="/public/pictures/main/partners/logo_7.png" alt="logo_7">
+                        </div>
+                        <h2 class="item-partners__name">Торговая сеть «Табрис»</h2>
+                     </div>
+                     <div class="partners-slider__item item-partners">
+                        <div class="item-partners__logo">
+                           <img src="/public/pictures/main/partners/logo_8.png" alt="logo_8">
+                        </div>
+                        <h2 class="item-partners__name">Информбюро</h2>
+                     </div>
+                     <div class="partners-slider__item item-partners">
+                        <div class="item-partners__logo">
+                           <img src="/public/pictures/main/partners/logo_9.png" alt="logo_9">
+                        </div>
+                        <h2 class="item-partners__name">Cад-гигант</h2>
+                     </div>
+                     <div class="partners-slider__item item-partners">
+                        <div class="item-partners__logo">
+                           <img src="/public/pictures/main/partners/logo_10.png" alt="logo_10">
+                        </div>
+                        <h2 class="item-partners__name">Типография цмик</h2>
+                     </div>
+                     <div class="partners-slider__item item-partners">
+                        <div class="item-partners__logo">
+                           <img src="/public/pictures/main/partners/logo_11.png" alt="logo_11">
+                        </div>
+                        <h2 class="item-partners__name">Стоматологическая клиника "Семейные традиции"</h2>
+                     </div>
+                     <div class="partners-slider__item item-partners">
+                        <div class="item-partners__logo">
+                           <img src="/public/pictures/main/partners/logo_12.png" alt="logo_12">
+                        </div>
+                        <h2 class="item-partners__name">Сбербанк</h2>
+                     </div>
+
+                     <!-- два дополнительных для скролла -->
+                     <div class="partners-slider__item item-partners">
+                        <div class="item-partners__logo">
+                           <img src="/public/pictures/main/partners/logo_11.png" alt="logo_11">
+                        </div>
+                        <h2 class="item-partners__name">Стоматологическая клиника "Семейные традиции"</h2>
+                     </div>
+                     <div class="partners-slider__item item-partners">
+                        <div class="item-partners__logo">
+                           <img src="/public/pictures/main/partners/logo_12.png" alt="logo_12">
+                        </div>
+                        <h2 class="item-partners__name">Сбербанк</h2>
+                     </div>
+
+                  </div>
+               </div>
+               <div class="main__partners-button">
+                  <a href="#popup__partner" class="popup__link">стать партнером</a>
+               </div>
+            </div>
+         </section>
+
+         <section class="main__subscribe">
+            <div class="main__subscribe-background">
+               <img src="/public/pictures/main/subscribe/subscribe.png" alt="subscribe">
+            </div>
+            <div class="main__subscribe-background-back">
+               <img src="/public/pictures/main/subscribe/subscribe_back.png" alt="subscribe">
+            </div>
+            <div class="main__subscribe-container _container">
+               <div class="subscribe__field">
+                  <h2 class="subscribe__field-title">
+                     Подпишитесь на рассылку фонда
+                  </h2>
+                  <p class="subscribe__field-text">
+                     Оставьте свой электронный адрес, и получайте свежие новости и отчеты о жизни фонда
+                  </p>
+                  <form class="subscribe__field-input">
+                     <input class="field-input__field" value="" type="text" name="user_email"
+                        placeholder="Ваша электронная почта">
+                     <a href="#popup__subscribe" class="field-input__button popup__link" type="submit">подписаться</a>
+                  </form>
+               </div>
+            </div>
+         </section>
+
+         <!-- Попап для партнера фонда  -->
+         <div id="popup__partner" class="popup">
+            <div class="popup__body">
+               <div class="popup__content partners-content">
+                  <a href="#header" class="partners-popup__close close-popup"></a>
+                  <div class="partners-content__title">станьте партнером фонда</div>
+                  <div class="partners-content__info">Заполните форму и наши сотрудники свяжутся с вами в ближайшее
+                     время</div>
+                  <form action="" class="partners-content__form partners-form">
+                     <input type="text" name="name_company" value="" placeholder="Название компании"
+                        class="partners-form__name partners-separate-field">
+                     <input type="email" name="email_company" value="" placeholder="Электронная почта"
+                        class="partners-form__email partners-separate-field">
+                     <input type="tel" name="phone_company" value="" placeholder="Телефон для обратной связи"
+                        class="partners-form__phone partners-separate-field">
+                     <textarea placeholder="Текст сообщения" name="message" id="" cols="30" rows="10"
+                        class="partners-form__message partners-separate-field"></textarea>
+                     <div class="partners-form__logo">
+                        <input id="input_file" type="file" name="logo" class="partners-form__input input__file">
+                        <label for="input_file" class="input__file-icon">
+                           <span class="input__file-vector"><img src="/public/pictures/popup_load.svg"
+                                 alt="Выбрать файл"></span>
+                           <span id="add_logo" class="input__file-text">Загрузить логотип</span>
+                        </label>
+                        <div id="result-file" class="input__file-result"></div>
+                     </div>
+                     <!-- здесь попап об успешном должен быть -->
+                     <button class="partners-form__button" type="submit">
+                        <a href="#popup__success" class="partners-form__link popup__link" type="submit">отправить</a>
+                     </button>
+                  </form>
+                  <div class="partners-content__agreement">
+                     Нажимая на кнопку вы соглашаетесь<br class="popup-form-br"> с условиями <a
+                        href="/app/views/goodness_offer.html">публичной офферты</a><br class="popup-form-br"> и даете
+                     согласие на обработку<br class="popup-form-br"> <a
+                        href="/app/views/goodness_pers-data.html">персональных данных</a>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <!-- Попап для подтверждения партнерства  -->
+         <div id="popup__success" class="popup">
+            <div class="popup__body">
+               <div class="popup__content successfully-sent">
+                  <h2><span>Спасибо!</span><br>ваша заявка успешно отправлена</h2>
+                  <div class="successfully-sent__icon"></div>
+                  <p>Наши сотрудники свяжутся с вами в ближайшее время</p>
+                  <a href="#header" class="successfully-sent__close close-popup">Закрыть</a>
+               </div>
+            </div>
+         </div>
+
+         <!-- Попап для подтверждения подписки на рассылку фонда  -->
+         <div id="popup__subscribe" class="popup">
+            <div class="popup__body">
+               <div class="popup__content successfully-sent">
+                  <h2><span>поздравляем!</span><br>вы подписались на рассылку фонда</h2>
+                  <div class="successfully-sent__icon"></div>
+                  <p>Теперь Вы будете получать уведомления о всех новостях</p>
+                  <a href="#header" class="successfully-sent__close close-popup">Закрыть</a>
+               </div>
+            </div>
+         </div>
+
+         <!-- плашка снизу  (добалять класс active__bar)-->
+         <div class="main__bar lock-padding">
+            <img src="/public/pictures/heart.png" alt="heart">
+            <p>Отправьте СМС на номер <span>7715</span><br class="bar-br"> с сообщением «счастье *сумма*»</p>
+            <img src="/public/pictures/heart.png" alt="heart">
+         </div>
+
+      </main>
+
+      <footer class="footer">
+         <div class="footer__container _container">
+            <div class="footer__top">
+               <div class="footer__top-logo">
+                  <a href="/app/views/goodness_main.html"><img src="/public/pictures/footer/logo.svg" alt="logo"></a>
+               </div>
+               <div class="footer__top-logo-mobile">
+                  <a href="/app/views/goodness_main.html"><img src="/public/pictures/footer/logo-mobile.svg"
+                        alt="logo-mobile"></a>
+               </div>
+               <div class="footer__top-navigation footernav">
+                  <div class="footernav__top">
+                     <div class="footernav__top-link link-frame">
+                        <a class="footernav__top-link-frame" href="/app/views/goodness_who-cares.html">
+                           <img src="/public/pictures/footer/frame.svg" alt="frame"
+                              class="footernav__top-link-frame-white">
+                           <img src="/public/pictures/footer/frame_hover.svg" alt="frame_hover"
+                              class="footernav__top-link-frame-hover">
+                           <p>кому помогли</p>
+                        </a>
+                     </div>
+                     <div class="footernav__top-link link-baby">
+                        <a class="footernav__top-link-baby" href="/app/views/goodness_all-stories.html">
+                           <img src="/public/pictures/footer/baby-boy.svg" alt="baby-boy"
+                              class="footernav__top-link-baby-white">
+                           <img src="/public/pictures/footer/baby-boy_hover.svg" alt="baby-boy_hover"
+                              class="footernav__top-link-baby-hover">
+                           <p>кому помочь</p>
+                        </a>
+                     </div>
+                     <div class="footernav__top-link link-ambulance">
+                        <a class="footernav__top-link-ambulance" href="/app/views/goodness_get-help.html">
+                           <img src="/public/pictures/footer/ambulance.svg" alt="ambulance"
+                              class="footernav__top-link-ambulance-white">
+                           <img src="/public/pictures/footer/ambulance_hover.svg" alt="ambulance_hover"
+                              class="footernav__top-link-ambulance-hover">
+                           <p>получить помощь</p>
+                        </a>
+                     </div>
+                  </div>
+
+                  <nav class="footernav__bot">
+                     <ul class="footernav__bot-list">
+                        <li class="footernav__bot-item">
+                           <a href="/app/views/goodness_fonds.html" class="footernav__bot-link">о фонде</a>
+                        </li>
+                        <li class="footernav__bot-item">
+                           <a href="/app/views/goodness_reports.html" class="footernav__bot-link">отчеты</a>
+                        </li>
+                        <li class="footernav__bot-item">
+                           <a href="/app/views/goodness_projects.html" class="footernav__bot-link">проекты</a>
+                        </li>
+                        <li class="footernav__bot-item">
+                           <a href="/app/views/goodness_news.html" class="footernav__bot-link">новости</a>
+                        </li>
+                        <li class="footernav__bot-item">
+                           <a href="/app/views/goodness_contacts.html" class="footernav__bot-link">контакты</a>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+               <div class="footer__top-contact contact-footer">
+                  <div class="contact-footer__phone">
+                     <a href="tel:88612034545"><img src="/public/pictures/footer/phone.svg" alt="phone"></a>
+                     <a href="tel:88612034545">8 (861) 203-45-45</a>
+                  </div>
+                  <div class="contact-footer__address">
+                     <p>г. Краснодар, ул. Красная, д.42, 1 этаж</p>
+                  </div>
+                  <div class="contact-footer__mail">
+                     <a href="mailto:info@kray-dobra.ru"><img src="/public/pictures/footer/mail.svg" alt="mail"></a>
+                     <a href="mailto:info@kray-dobra.ru">info@kray-dobra.ru</a>
+                  </div>
+               </div>
+            </div>
+
+            <div class="footer__bot">
+               <div class="footer__bot-policy">
+                  <p><a href="#">Политика конфиденциальности</a></p>
+                  <!-- <a href="#">Политика конфиденциальности</a> -->
+               </div>
+               <div class="footer__bot-copyright">
+                  <p>© 2022 Благотворительный фонд помощи детям «Край добра»</p>
+               </div>
+               <div class="footer__bot-designed">
+                  <p>Разработано: <a href="">design&code</a></p>
+               </div>
+               <div class="footer__bot-media">
+                  <div class="footer__bot-scan">
+                     <img src="/public/pictures/footer/qr.svg" alt="qr">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </footer>
+
+   </div>
+
+   <!-- Подключаем jQuery (без неё JS не работает) -->
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+   <!-- Подключаем slick -->
+   <script src="/public/js/slick.min.js"></script>
+   <!-- Подключаем JS -->
+   <script src="/public/js/goodness_main.js"></script>
+   <script src="/public/js/select.js"></script>
+</body>
+
+</html>

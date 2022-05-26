@@ -1,0 +1,552 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<!-- Чтобы на IOS номер телефона не изменял свой стиль -->
+		<meta name="format-detection" content="telephone=no">
+		 <!-- Для подключения иконки к сайту -->
+	 	<link rel="shortcut icon" href="/public/pictures/goodness_icon.ico">
+		<link rel="stylesheet" href="/public/css/goodness_main.css?">
+		<link rel="stylesheet" href="/public/css/goodness_fonds.css?">
+		<title>Край Добра. О фонде</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header lock-padding">
+				<div class="header__container _container">
+					<div class="header__logo">
+						<a href="/app/views/goodness_main.html">
+							<div class="header__logo-img">
+								<img class="logo__main" src="/public/pictures/header/logo_main.svg" alt="logo_main">
+								<img class="logo__text-more" src="/public/pictures/header/logo_text.svg" alt="logo_text">
+							</div>
+						</a>
+					</div>
+					<!-- Бургер на 776px -->
+					<div class="header__burger-block">
+						<div class="header__burger-button">
+							<span></span>
+						</div>
+					</div>
+					<div class="header__menu">
+						<div class="header__menu-top help">
+							<div class="help__mail">
+								<a href="mailto:info@kray-dobra.ru"><img src="/public/pictures/header/mail.svg" alt="mail"></a>
+	   						<a class="help__mail-mobile" href="mailto:info@kray-dobra.ru">info@kray-dobra.ru</a>
+	   					</div>
+							<div class="help__phone">
+								<a href="tel:88612034545"><img src="/public/pictures/header/phone.svg" alt="phone"></a>
+	   						<a class="help__mail-mobile" href="tel:88612034545">8(861)203-45-45</a>
+	   					</div>
+							<div class="help__donation donate-link-transparent"><a tabindex="1" href="/app/views/goodness_all-stories.html">хочу помочь</a></div>
+						</div>
+
+						<nav class="header__menu-bot navigation">
+							<ul class="navigation__list">
+			            	<li class="navigation__item">
+	                    		<a tabindex="2" href="/app/views/goodness_fonds.html" class="navigation__link">о фонде</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="3" href="/app/views/goodness_reports.html" class="navigation__link">отчеты</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="4" href="/app/views/goodness_projects.html" class="navigation__link">проекты</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="5" href="/app/views/goodness_news.html" class="navigation__link">новости</a>
+	           				</li>
+			            	<li class="navigation__item last-item">
+	                    		<a tabindex="6" href="/app/views/goodness_contacts.html" class="navigation__link">контакты</a>
+	           				</li>
+			            	<li class="navigation__item inactive-item">
+	                    		<a tabindex="4" href="/app/views/goodness_who-cares.html" class="navigation__link">кому помогли</a>
+	           				</li>
+			            	<li class="navigation__item inactive-item">
+	                    		<a tabindex="5" href="/app/views/goodness_all-stories.html" class="navigation__link">кому помочь</a>
+	           				</li>
+			            	<li class="navigation__item inactive-item">
+	                    		<a tabindex="6" href="/app/views/goodness_get-help.html" class="navigation__link">получить помощь</a>
+	           				</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</header>
+			<!-- Упрощенная шапка при скролле (только для дисплеев шире 1146px) -->
+			<header class="header-scroll">
+				<div class="header-scroll__container _container">
+					<div class="header-scroll__logo">
+						<a href="/app/views/goodness_main.html">
+							<div class="header__scroll-logo">
+								<img src="/public/pictures/header/logo-scroll.svg" alt="logo-scroll" class="header__scroll-logo-img">
+							</div>
+						</a>
+					</div>
+					<div class="header__menu-scroll">
+						<div class="header__menu-right help-right">
+							<div class="help-right__interactive-icons">
+								<div class="help__mail-interactive">
+									<a href="mailto:info@kray-dobra.ru"><img src="/public/pictures/header/mail.svg" alt="mail"></a>
+		   					</div>
+								<div class="help__phone-interactive">
+									<a href="tel:88612034545"><img src="/public/pictures/header/phone.svg" alt="phone"></a>
+		   					</div>					
+							</div>
+							<div class="help__donation donate-link-transparent"><a tabindex="1" href="/app/views/goodness_all-stories.html">хочу помочь</a></div>
+						</div>
+
+						<nav class="header__menu-left navigation">
+							<ul class="navigation__list">
+			            	<li class="navigation__item">
+	                    		<a tabindex="2" href="/app/views/goodness_fonds.html" class="navigation__link">о фонде</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="3" href="/app/views/goodness_reports.html" class="navigation__link">отчеты</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="4" href="/app/views/goodness_projects.html" class="navigation__link">проекты</a>
+	           				</li>
+			            	<li class="navigation__item">
+	                    		<a tabindex="5" href="/app/views/goodness_news.html" class="navigation__link">новости</a>
+	           				</li>
+			            	<li class="navigation__item last-item">
+	                    		<a tabindex="6" href="/app/views/goodness_contacts.html" class="navigation__link">контакты</a>
+	           				</li>
+							</ul>
+						</nav>
+					</div>
+				</div>		
+			</header>
+
+			<main class="main">
+
+				<div class="fonds__banner">
+					<div class="fonds__banner-container _container">
+						<div class="fonds__banner-header">
+							<h1>о фонде</h1>
+						</div>
+						<div class="fonds__banner-image1">
+							<img src="/public/pictures/fonds/fond-logo.png" alt="fonds-logo">
+						</div>
+						<div class="fonds__banner-mobile">
+							<div class="fonds__banner-image1-mobile">
+								<img src="/public/pictures/fonds/fond-logo-mobile.png" alt="fonds-logo-mobile">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<section class="fonds__navigation">
+					<div class="fonds__navigation-container _container">
+						<ul class="fonds__navigation-links">
+							<li class="fonds__navigation-link">
+								<a class="fonds__navigation-link-main" href="/app/views/goodness_main.html">Главная</a>
+							</li>
+							<li class="fonds__navigation-link">
+								<span class="fonds__navigation-link-divide">/</span>
+							</li>
+							<li class="fonds__navigation-link">
+								<a class="fonds__navigation-link-current" href="#">О фонде</a>
+							</li>
+						</ul>
+					</div>
+				</section>
+
+
+				<seciton class="fonds__intro">
+					<div class="fonds__intro-background"></div>
+					<div class="fonds__intro-container _container">
+						<div class="fonds__intro-blocks">
+							<div class="fonds__intro-block intro-block_1">
+								<h2>«Край добра» — крупнейший и один из самых известных благотворительных фондов, помогающих больным  детям на Кубани</h2>
+								<p>
+									С 2015 года мы работаем, чтобы спасать детские жизни и помогать тяжелобольным ребятам и их семьям. 
+									Наши подопечные борются с самыми разными заболеваниями онкология, ДЦП, сахарный диабет, нарушения зрения, слуха, поражения центральной нервной системы, редкие генетические заболевания и сложнейшие травмы.
+									Из собранных средств мы оплачиваем проведение хирургических операций, курсы реабилитации и обследования, приобретаем жизненно необходимые препараты, медицинские приборы, технические средства реабилитации, авиа- и ж/д билеты к месту лечения ребенка.
+								</p>
+							</div>
+							<div class="fonds__intro-block intro-block_2">
+								<span>
+									Из собранных средств мы оплачиваем проведение хирургических операций курсы реабилитации и обследования, приобретаем жизненно необходимые препараты, медицинские приборы, технические средства реабилитации, авиа и жд билеты к месту лечения ребенка.
+								</span>
+								<!-- <p>приобретаем жизненно необходимые препараты, медицинские приборы, технические средства реабилитации, авиа и жд билеты к месту лечения ребенка</p> -->
+							</div>
+						</div>
+					</div>
+				</seciton>
+
+				<section class="fonds__soviet">
+					<div class="fonds__soviet-container _container">
+						<div class="fonds__soviet-header main-header__title">
+							<h1>наблюдательный совет</h1>
+						</div>
+						<div class="fonds__soviet-content">
+							<div class="fonds__soviet-items">
+
+								<div class="soviet-item soviet-item__specialized">
+									<h3 class="soviet-item__specialized-header">Помогать профессионально – основной принцип работы фонда.</h3>
+									<div class="soviet-item__specialized-text">
+										<p>Благотворительность — наша профессия. К каждой просьбе о помощи мы подходим внимательно и максимально ответственно. Каждое обращение рассматривает Наблюдательный совет фонда. В него входят ведущие врачи в сфере детского здравоохранения. Возглавляет совет уже много лет главный врач Детской краевой клинической больницы Елена Ивановна Клещенко.</p>
+										<p>ВФонд несет полную ответственность за собранные благотворительные пожертвования и предоставляет отчеты об их использовании своим благотворителям.</p>
+										<!-- <p>Возглавляет совет уже много лет главный врач Детской краевой клинической больницы Елена Ивановна Клещенко</p> -->
+									</div>
+									<div class="soviet-item__specialized-button get-help__content-button-get donate-link-no-transparent"><a tabindex="" href="/app/views/goodness_get-help.html">получить помощь</a></div>
+								</div>
+
+								<div class="soviet-item soviet-item__card">
+									<div class="soviet-item__card-ticket">
+										<div class="soviet-item__card-img-container">
+											<img class="soviet-item__card-img" src="/public/pictures/fonds/cards/card_1.png" alt="card_1">
+										</div>
+										<h2 class="soviet-item__card-fio">Елена Ивановна Клещенко</h2>
+										<p class="soviet-item__card-text">Доктор медицинских наук, врач высшей категории</p>
+										<div class="soviet-item__card-spoiler">
+											<span class="inactive-spoiler visible-button">Подробнее</span>
+											<span class="active-spoiler">Скрыть</span>
+										</div>								
+									</div>
+									<div class="soviet-item__card-info info__soviet-card">
+										<div class="info__soviet-card-all">
+											<span class="info__soviet-card-intro">Председатель Наблюдательного совета, Главный врач государственного бюджетного учреждения здравоохранения «Детская краевая клиническая больница» министерства здравоохранения Краснодарского края.</span>
+											<div class="info__soviet-card-more">
+												<p>Я выражаю не только свое мнение, но и мнение 2,5-тысячного коллектива детской краевой клинической больницы, когда говорю, что наличие неравнодушных к чужой боли людей помогает не только лечить наших пациентов, но и зачастую возвращать им жизни.</p>
+												<p>Отрадно, что у нас на Кубани есть люди, которые подобно Павлу Михайловичу Третьякову считают, что «нажитое от народа вернулось бы также народу в каких-либо полезных учреждениях.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="soviet-item soviet-item__card">
+									<div class="soviet-item__card-ticket">
+										<div class="soviet-item__card-img-container">
+											<img class="soviet-item__card-img" src="/public/pictures/fonds/cards/card_2.png" alt="card_2">
+										</div>
+										<h2 class="soviet-item__card-fio">Владимир Вениаминович Лебедев</h2>
+										<p class="soviet-item__card-text">Кандидат медицинских наук, врач высшей категории</p>
+										<div class="soviet-item__card-spoiler">
+											<span class="inactive-spoiler visible-button">Подробнее</span>
+											<span class="active-spoiler">Скрыть</span>
+										</div>								
+									</div>
+									<div class="soviet-item__card-info info__soviet-card">
+										<div class="info__soviet-card-all">
+											<span class="info__soviet-card-intro">Заведующий отделением онкологии и гематологии с химиотерапией государственного бюджетного учреждения здравоохранения «Детская краевая клиническая больница №1» министерства здравоохранения Краснодарского края.</span>
+											<div class="info__soviet-card-more">
+												<p>Как лечащий врач тяжелобольных пациентов я понимаю ту неоценимую духовную и материальную помощь, которую оказывают жители Кубани больным детям. Когда стоит вопрос о жизни и смерти, о надежде и отчаянии, нам не обойтись без участия кубанцев.</p>
+												<p>И они всегда протягивают руку помощи и поддержки семьям, нуждающимся в экстраординарных видах лечения детей, больных раком. </p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="soviet-item soviet-item__card">
+									<div class="soviet-item__card-ticket">
+										<div class="soviet-item__card-img-container">
+											<img class="soviet-item__card-img" src="/public/pictures/fonds/cards/card_3.png" alt="card_3">
+										</div>
+										<h2 class="soviet-item__card-fio">Нафисет Хусейновна Тхакушинова</h2>
+										<p class="soviet-item__card-text">Кандидат медицинских наук, врач высшей категории</p>
+										<div class="soviet-item__card-spoiler">
+											<span class="inactive-spoiler visible-button">Подробнее</span>
+											<span class="active-spoiler">Скрыть</span>
+										</div>								
+									</div>
+									<div class="soviet-item__card-info info__soviet-card">
+										<div class="info__soviet-card-all">
+											<span class="info__soviet-card-intro">Главный врач государственного бюджетного учреждения здравоохранения «Специализированная клиническая детская инфекционная больница» министерства здравоохранения Краснодарского края.</span>
+											<div class="info__soviet-card-more">
+												<p>«Если ты подаешь хлеб с печальным сердцем, то ты потерял и хлеб, и награду» Иоанн Златоуст В России благотворительность имеет свою богатую историю и традиции. Имена Павла Третьякова, Саввы Мамонтова, Саввы Морозова знакомы всем, для них благотворительность была смыслом жизни, иих добрые дела бессмертны.</p>
+												<p>Благотворительный фонд «Край Добра» служит ярким и достойным примером заботы о детях, это адресный проект, прививающий культуру благотворительности.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="soviet-item soviet-item__card">
+									<div class="soviet-item__card-ticket">
+										<div class="soviet-item__card-img-container">
+											<img class="soviet-item__card-img" src="/public/pictures/fonds/cards/test_3.jpg" alt="card_3">
+										</div>
+										<h2 class="soviet-item__card-fio">Нафисет Хусейновна Тхакушинова</h2>
+										<p class="soviet-item__card-text">Кандидат медицинских наук, врач высшей категории</p>
+										<div class="soviet-item__card-spoiler">
+											<span class="inactive-spoiler visible-button">Подробнее</span>
+											<span class="active-spoiler">Скрыть</span>
+										</div>								
+									</div>
+									<div class="soviet-item__card-info info__soviet-card">
+										<div class="info__soviet-card-all">
+											<span class="info__soviet-card-intro">Главный врач государственного бюджетного учреждения здравоохранения «Специализированная клиническая детская инфекционная больница» министерства здравоохранения Краснодарского края.</span>
+											<div class="info__soviet-card-more">
+												<p>«Если ты подаешь хлеб с печальным сердцем, то ты потерял и хлеб, и награду» Иоанн Златоуст В России благотворительность имеет свою богатую историю и традиции. Имена Павла Третьякова, Саввы Мамонтова, Саввы Морозова знакомы всем, для них благотворительность была смыслом жизни, иих добрые дела бессмертны.</p>
+												<p>Благотворительный фонд «Край Добра» служит ярким и достойным примером заботы о детях, это адресный проект, прививающий культуру благотворительности.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="soviet-item soviet-item__card">
+									<div class="soviet-item__card-ticket">
+										<div class="soviet-item__card-img-container">
+											<img class="soviet-item__card-img" src="/public/pictures/fonds/cards/card_4.png" alt="card_4">
+										</div>
+										<h2 class="soviet-item__card-fio">Яна Валентиновна Сторожук</h2>
+										<p class="soviet-item__card-text">Руководитель благотворительного фонда помощи детям "Край Добра".</p>
+										<div class="soviet-item__card-spoiler">
+											<span class="inactive-spoiler visible-button">Подробнее</span>
+											<span class="active-spoiler">Скрыть</span>
+										</div>									
+									</div>
+									<div class="soviet-item__card-info info__soviet-card">
+										<div class="info__soviet-card-all">
+											<span class="info__soviet-card-intro">«Делать то, что ты любишь - свобода, любить то, что ты делаешь - счастье»</span>
+											<div class="info__soviet-card-more">
+												<p>Для меня слова «милосердие» и «благотворительность» - синонимы. Потому что не сможет человек БЛАГО ТВОРИТЬ без доброго, МИЛОГО сердца. Просто не почувствует чужую боль. Благотворительный фонд объединяет кубанцев в едином порыве - помогать ближнему и сострадать.</p>
+												<p>Каждый день и даже каждый час кто-то нуждается в нашей помощи. Чья-то маленькая жизнь может оборваться. Самое страшное - это пройти мимо, отвернуться, забыть. Но как потом жить с этим? С ощущением того, что ты мог помочь, но не помог? Мог спасти, но не спас? Каждый решает сам, как ответить на эти вопросы. </p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="soviet-item soviet-item__card">
+									<div class="soviet-item__card-ticket">
+										<div class="soviet-item__card-img-container">
+											<img class="soviet-item__card-img" src="/public/pictures/fonds/cards/card_5.png" alt="card_5">
+										</div>
+										<h2 class="soviet-item__card-fio">Ирина Юрьевна Черняк</h2>
+										<p class="soviet-item__card-text">Кандидат медицинских наук, врач высшей категори</p>
+										<div class="soviet-item__card-spoiler">
+											<span class="inactive-spoiler visible-button">Подробнее</span>
+											<span class="active-spoiler">Скрыть</span>
+										</div>						
+									</div>
+									<div class="soviet-item__card-info info__soviet-card">
+										<div class="info__soviet-card-all">
+											<span class="info__soviet-card-intro">Заведующая эндокринологическим отделением государственного бюджетного учреждения здравоохранения «Детская краевая клиническая больница №1» министерства здравоохранения Краснодарского края.</span>
+											<div class="info__soviet-card-more">
+												<p>Рука, протянутая в простом и искреннем желании помощи детям, имеет для меня намного большее значение, чем рука, поднятая в восторге пусть даже самого высокого искусства». </p>
+												<p>Полностью согласна с этим высказыванием. Хорошо, что у нас в крае действительно много людей, искренне желающих помогать детям.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="soviet-item soviet-item__card">
+									<div class="soviet-item__card-ticket">
+										<div class="soviet-item__card-img-container">
+											<img class="soviet-item__card-img" src="/public/pictures/fonds/cards/card_6.png" alt="card_6">
+										</div>
+										<h2 class="soviet-item__card-fio">Наталья Валериевна Сидорова</h2>
+										<p class="soviet-item__card-text">Врач высшей категории</p>
+										<div class="soviet-item__card-spoiler">
+											<span class="inactive-spoiler visible-button">Подробнее</span>
+											<span class="active-spoiler">Скрыть</span>
+										</div>								
+									</div>
+									<div class="soviet-item__card-info info__soviet-card">
+										<div class="info__soviet-card-all">
+											<span class="info__soviet-card-intro">Первый заместитель главного врача государственного бюджетного учреждения здравоохранения «Детская краевая клиническая больница №1» министерства здравоохранения Краснодарского края.</span>
+											<div class="info__soviet-card-more">
+												<p>В нашей жизни всегда нужно соблюдать простые, но такие верные правила. Тогда и мир вокруг нас станет лучше. Для меня это правило звучит так: «Главное - правильно дышать. Вдыхать счастье. Выдыхать добро».</p>
+												<p></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="soviet-item soviet-item__card">
+									<div class="soviet-item__card-ticket">
+										<div class="soviet-item__card-img-container">
+											<img class="soviet-item__card-img" src="/public/pictures/fonds/cards/card_7.png" alt="card_7">
+										</div>
+										<h2 class="soviet-item__card-fio">Марина Михайловна Трубилина</h2>
+										<p class="soviet-item__card-text">Кандидат медицинских наук, врач высшей категории</p>
+										<div class="soviet-item__card-spoiler">
+											<span class="inactive-spoiler visible-button">Подробнее</span>
+											<span class="active-spoiler">Скрыть</span>
+										</div>									
+									</div>
+									<div class="soviet-item__card-info info__soviet-card">
+										<div class="info__soviet-card-all">
+											<span class="info__soviet-card-intro">Главный врач государственного учреждения здравоохранения «Краевая клиническая больница №1 им. С.В. Очаповского» министерства здравоохранения Краснодарского края.</span>
+											<div class="info__soviet-card-more">
+												<p>У детей, по законам жизни, впереди должно быть все: великие дела, достижения, успехи. Но когда болезнь нарушает этот ход событий – возникает ощущение высшей несправедливости.</p>
+												<p>И благие дела, которые помогают детям одержать победу над своей болезнью, ощутить всю полноту жизни, – это очень важно. Так считаю не только я. Так думают все неравнодушные люди.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="soviet-item soviet-item__card">
+									<div class="soviet-item__card-ticket">
+										<div class="soviet-item__card-img-container">
+											<img class="soviet-item__card-img" src="/public/pictures/fonds/cards/card_8.png" alt="card_8">
+										</div>
+										<h2 class="soviet-item__card-fio">Ольга Викторовна Пыжова</h2>
+										<p class="soviet-item__card-text">Врач первой категории</p>
+										<div class="soviet-item__card-spoiler">
+											<span class="inactive-spoiler visible-button">Подробнее</span>
+											<span class="active-spoiler">Скрыть</span>
+										</div>									
+									</div>
+									<div class="soviet-item__card-info info__soviet-card">
+										<div class="info__soviet-card-all">
+											<span class="info__soviet-card-intro">Врач-сурдолог-оториноларинголог консультативно-поликлинического отделения №2 государственного бюджетного учреждения здравоохранения «Детская краевая клиническая больница №1» министерства здравоохранения Краснодарского края.</span>
+											<div class="info__soviet-card-more">
+												<p>Для меня благотворительность – это проявление сострадания к ближнему и нравственная обязанность имущего спешить на помощь неимущему. Это чувство, идущее от сердца, и долг, которому нужно следовать.</p>
+												<p></p>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="soviet-item soviet-item__card">
+									<div class="soviet-item__card-ticket">
+										<div class="soviet-item__card-img-container">
+											<img class="soviet-item__card-img" src="/public/pictures/fonds/cards/card_9.png" alt="card_9">
+										</div>
+										<h2 class="soviet-item__card-fio">Владимир Алексеевич Порханов</h2>
+										<p class="soviet-item__card-text">Доктор медицинских наук, профессор, академик РАН, заслуженный врач Российской Федерации</p>
+										<div class="soviet-item__card-spoiler">
+											<span class="inactive-spoiler visible-button">Подробнее</span>
+											<span class="active-spoiler">Скрыть</span>
+										</div>									
+									</div>
+									<div class="soviet-item__card-info info__soviet-card">
+										<div class="info__soviet-card-all">
+											<span class="info__soviet-card-intro">Главный врач государственного учреждения здравоохранения «Краевая клиническая больница №1 им. С.В. Очаповского» министерства здравоохранения Краснодарского края.</span>
+											<div class="info__soviet-card-more">
+												<p>Время не стоит на месте – оно движется вперед неумолимо. Мы многое не успеваем сделать из того, что было нами задумано. И ощущение, что от нас ускользает нечто важное, не оставляет в покое.</p>
+												<p>А что именно мы не успели? Дом построили, дерево посадили и сына вырастили. Но разве мы живем только для этого? Может быть, мы можем еще что-то успеть сделать в этом мире? Мы еще можем успеть сделать очень важное дело – помочь тем, кто особенно нуждается в нашей помощи.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+
+							</div>
+						</div>
+
+						<!-- Documents -->
+						<div class="documents">
+							<!-- <h2 class="zagdoc">Документы</h2> -->
+							<div class="docs">
+								<div class="docitem">
+									<a href="/o-fonde/устав5.pdf" target="_blank">Устав</a>
+								</div>
+								<div class="docitem">
+									<a href="/o-fonde/svidetelstvo.jpeg" target="_blank">Свидетельство о регистрации</a>
+								</div>
+								<div class="docitem">
+									<a href="/o-fonde/ogrn.jpeg" target="_blank">Свидетельство о постановке на учет</a>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+				</section>				
+
+				<!-- плашка снизу  (добалять класс active__bar)-->
+				<div class="main__bar lock-padding">
+					<img src="/public/pictures/heart.png" alt="heart">
+					<p>Отправьте СМС на номер <span>7715</span><br class="bar-br"> с сообщением «счастье *сумма*»</p>
+					<img src="/public/pictures/heart.png" alt="heart">
+				</div>
+
+			</main>
+
+			<footer class="footer">
+				<div class="footer__container _container">
+					<div class="footer__top">
+						<div class="footer__top-logo">
+							<a href="/app/views/goodness_main.html"><img src="/public/pictures/footer/logo.svg" alt="logo"></a>
+						</div>
+						<div class="footer__top-logo-mobile">
+							<a href="/app/views/goodness_main.html"><img src="/public/pictures/footer/logo-mobile.svg" alt="logo-mobile"></a>
+						</div>
+						<div class="footer__top-navigation footernav">
+							<div class="footernav__top">
+								<div class="footernav__top-link link-frame">
+									<a class="footernav__top-link-frame" href="/app/views/goodness_who-cares.html">
+										<img src="/public/pictures/footer/frame.svg" alt="frame" class="footernav__top-link-frame-white">
+										<img src="/public/pictures/footer/frame_hover.svg" alt="frame_hover" class="footernav__top-link-frame-hover">
+										<p>кому помогли</p>
+									</a>
+								</div>
+								<div class="footernav__top-link link-baby">
+									<a class="footernav__top-link-baby" href="/app/views/goodness_all-stories.html">
+										<img src="/public/pictures/footer/baby-boy.svg" alt="baby-boy" class="footernav__top-link-baby-white">
+										<img src="/public/pictures/footer/baby-boy_hover.svg" alt="baby-boy_hover" class="footernav__top-link-baby-hover">
+										<p>кому помочь</p>
+									</a>
+								</div>
+								<div class="footernav__top-link link-ambulance">
+									<a class="footernav__top-link-ambulance" href="/app/views/goodness_get-help.html">
+										<img src="/public/pictures/footer/ambulance.svg" alt="ambulance" class="footernav__top-link-ambulance-white">
+										<img src="/public/pictures/footer/ambulance_hover.svg" alt="ambulance_hover" class="footernav__top-link-ambulance-hover">
+										<p>получить помощь</p>
+									</a>
+								</div>
+							</div>
+							
+							<nav class="footernav__bot">
+								<ul class="footernav__bot-list">
+				            	<li class="footernav__bot-item">
+		                    		<a href="/app/views/goodness_fonds.html" class="footernav__bot-link">о фонде</a>
+		           				</li>
+				            	<li class="footernav__bot-item">
+		                    		<a href="/app/views/goodness_reports.html" class="footernav__bot-link">отчеты</a>
+		           				</li>
+				            	<li class="footernav__bot-item">
+		                    		<a href="/app/views/goodness_projects.html" class="footernav__bot-link">проекты</a>
+		           				</li>
+				            	<li class="footernav__bot-item">
+		                    		<a href="/app/views/goodness_news.html" class="footernav__bot-link">новости</a>
+		           				</li>
+				            	<li class="footernav__bot-item">
+		                    		<a href="/app/views/goodness_contacts.html" class="footernav__bot-link">контакты</a>
+		           				</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="footer__top-contact contact-footer">            
+							<div class="contact-footer__phone">
+								<a href="tel:88612034545"><img src="/public/pictures/footer/phone.svg" alt="phone"></a>
+	   						<a href="tel:88612034545">8(861)203-45-45</a>
+							</div>
+							<div class="contact-footer__address">
+	   						<p>г. Краснодар, ул. Красная, д.42, 1 этаж</p>
+							</div>
+							<div class="contact-footer__mail">
+								<a href="mailto:info@kray-dobra.ru"><img src="/public/pictures/footer/mail.svg" alt="mail"></a>
+	   						<a href="mailto:info@kray-dobra.ru">info@kray-dobra.ru</a>
+							</div>	
+						</div>
+					</div>
+
+					<div class="footer__bot">
+						<div class="footer__bot-policy">
+							<p>Политика конфиденциальности</p>
+						</div>
+						<div class="footer__bot-copyright">
+							<p>© 2022 Благотворительный фонд помощи детям «Край добра»</p>
+						</div>
+						<div class="footer__bot-designed">
+							<p>Разработано: design&code</p>
+						</div>
+						<div class="footer__bot-media">
+							<div class="footer__bot-scan">
+								<img src="/public/pictures/footer/qr.svg" alt="qr">
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>				
+
+		</div>
+
+
+		
+		<!-- Подключаем jQuery (без неё JS не работает) -->
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+		<!-- Подключаем slick -->
+		<script src="/public/js/slick.min.js"></script>
+		<!-- Подключаем JS -->
+		<script src="/public/js/goodness_common.js"></script>
+		<script src="/public/js/goodness_fonds.js"></script>
+		<script src="/public/js/goodness_header.js"></script>
+	</body>
+</html>
