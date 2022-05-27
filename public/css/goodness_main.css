@@ -1911,7 +1911,6 @@ body.lock {
 @media (max-width: 479px) {
   .ban-content__title {
     max-width: 360px;
-    background: blue;
     max-height: 80px;
   }
 }
