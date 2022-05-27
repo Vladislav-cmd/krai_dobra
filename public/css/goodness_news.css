@@ -20,6 +20,7 @@ main {
           align-items: center;
   z-index: 5;
 }
+
 @media (max-width: 776px) {
   .news__banner-container {
     -webkit-box-orient: vertical;
@@ -30,7 +31,7 @@ main {
 }
 
 .news__banner-header h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 700;
   color: #FFFFFF;
   font-size: 45px;
@@ -38,6 +39,7 @@ main {
   text-transform: uppercase;
   letter-spacing: 0.01em;
 }
+
 @media (max-width: 776px) {
   .news__banner-header h1 {
     font-size: 27px;
@@ -47,6 +49,7 @@ main {
     text-shadow: 0px 10px 20px rgba(255, 255, 255, 0.25);
   }
 }
+
 @media (max-width: 776px) {
   .news__banner-header {
     -webkit-box-ordinal-group: 3;
@@ -63,6 +66,7 @@ main {
   width: 205px;
   height: 206px;
 }
+
 .news__banner-image1 img {
   max-width: 100%;
   max-height: 100%;
@@ -70,6 +74,7 @@ main {
      object-fit: cover;
   background: transparent;
 }
+
 @media (max-width: 776px) {
   .news__banner-image1 {
     display: none;
@@ -84,12 +89,14 @@ main {
   width: 205px;
   height: 205px;
 }
+
 .news__banner-image2 img {
   max-width: 100%;
   max-height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
+
 @media (max-width: 776px) {
   .news__banner-image2 {
     display: none;
@@ -99,6 +106,7 @@ main {
 .news__banner-mobile {
   display: none;
 }
+
 @media (max-width: 776px) {
   .news__banner-mobile {
     display: inherit;
@@ -116,6 +124,7 @@ main {
   width: 137px;
   height: 138px;
 }
+
 .news__banner-image1-mobile img {
   max-width: 100%;
   max-height: 100%;
@@ -131,6 +140,7 @@ main {
   width: 137px;
   height: 137px;
 }
+
 .news__banner-image2-mobile img {
   max-width: 100%;
   max-height: 100%;
@@ -141,6 +151,7 @@ main {
 .news__navigation {
   margin: 35px 0 80px 0;
 }
+
 @media (max-width: 776px) {
   .news__navigation {
     display: none;
@@ -161,11 +172,12 @@ main {
 
 .news__navigation-link-main {
   color: #A3A9AF;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 600;
   font-size: 13.125px;
   line-height: 121%;
 }
+
 .news__navigation-link-main:hover {
   text-decoration: underline;
 }
@@ -175,17 +187,18 @@ main {
   font-size: 13.125px;
   line-height: 121%;
   font-weight: 700;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   text-transform: uppercase;
 }
 
 .news__navigation-link-current {
   color: #6E7C96;
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 600;
   font-size: 13.125px;
   line-height: 121%;
 }
+
 .news__navigation-link-current:hover {
   text-decoration: underline;
 }
@@ -193,6 +206,7 @@ main {
 .news__buttons {
   margin: 0 0 45px 0;
 }
+
 @media (max-width: 776px) {
   .news__buttons {
     margin: 40px 0 45px 0;
@@ -200,7 +214,7 @@ main {
 }
 
 .news__button {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 13.125px;
   line-height: 121%;
@@ -210,20 +224,25 @@ main {
   background: none;
   border-radius: 10px;
 }
+
 .news__button:not(:last-child) {
   margin: 0 10px 15px 0;
 }
+
 .news__button:last-child {
   margin: 0 0 15px 0;
 }
+
 .news__button a {
   display: inline-block;
   color: #6E7C96;
   padding: 11.5px 20px;
 }
+
 .news__button a:hover {
   color: #719AED;
 }
+
 @media (max-width: 479px) {
   .news__button a {
     padding: 11.5px 15px;
@@ -235,6 +254,7 @@ main {
   border: 2px solid;
   border-image-source: linear-gradient(91.01deg, rgba(135, 133, 255, 0.5) 0%, rgba(116, 127, 226, 0.5) 50.52%, rgba(94, 205, 218, 0.5) 100%), linear-gradient(0deg, #70AAF8, #70AAF8);
 }
+
 .active-button a {
   color: #719AED;
 }
@@ -242,6 +262,7 @@ main {
 .news__blocks {
   margin: 0 0 120px 0;
 }
+
 @media (max-width: 776px) {
   .news__blocks {
     margin: 0 0 80px 0;
@@ -260,8 +281,10 @@ main {
       -ms-flex-pack: inherit !important;
           justify-content: inherit !important;
   gap: 50px !important;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 402px)) !important;
+  -ms-grid-columns: (minmax(300px, 402px))[auto-fit] !important;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 402px)) !important;
 }
+
 @media (max-width: 1336px) {
   .news-issues__bottom-items {
     -webkit-box-pack: center !important;
@@ -269,9 +292,11 @@ main {
             justify-content: center !important;
   }
 }
+
 @media (max-width: 883px) {
   .news-issues__bottom-items {
-    grid-template-columns: repeat(auto-fit, minmax(290px, 500px)) !important;
+    -ms-grid-columns: (minmax(290px, 500px))[auto-fit] !important;
+        grid-template-columns: repeat(auto-fit, minmax(290px, 500px)) !important;
     gap: 25px !important;
   }
 }
@@ -287,11 +312,13 @@ main {
   overflow: hidden;
   position: relative;
 }
+
 @media (max-width: 1278px) {
   .bottom-issues__item {
     height: 520px;
   }
 }
+
 @media (max-width: 883px) {
   .bottom-issues__item {
     height: auto;
@@ -305,11 +332,13 @@ main {
   width: 402px;
   height: 220px;
 }
+
 @media (max-width: 1278px) {
   .bottom-issues__item-image {
     width: inherit !important;
   }
 }
+
 .bottom-issues__item-image img {
   width: 100%;
   height: 100%;
@@ -318,21 +347,24 @@ main {
   -webkit-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
 }
+
 .bottom-issues__item-image img:hover {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
 }
 
 .bottom-issues__item-intro-text {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   max-height: 185px;
 }
+
 @media (max-width: 883px) {
   .bottom-issues__item-intro-text {
     max-height: inherit;
     height: auto;
   }
 }
+
 .bottom-issues__item-intro-text h2 {
   display: block;
   color: #343640;
@@ -345,12 +377,14 @@ main {
   overflow: hidden;
   word-wrap: break-word;
 }
+
 @media (max-width: 883px) {
   .bottom-issues__item-intro-text h2 {
     max-height: inherit;
     height: auto;
   }
 }
+
 .bottom-issues__item-intro-text p {
   display: block;
   color: #767885;
@@ -362,12 +396,14 @@ main {
   overflow: hidden;
   word-wrap: break-word;
 }
+
 @media (max-width: 883px) {
   .bottom-issues__item-intro-text p {
     max-height: inherit;
     height: auto;
   }
 }
+
 @media (max-width: 883px) {
   .bottom-issues__item-intro-text {
     margin: 0 0 30px 0;
