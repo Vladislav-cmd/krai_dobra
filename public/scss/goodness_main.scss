@@ -5333,7 +5333,6 @@ input[type="range"]:active::-ms-thumb {
 		margin: 0 15px 0 0;
 	}
 	@media (max-width: 500px) {
-		background: red;
 		height: 119px !important;
 		justify-content: flex-start;
 		flex-direction: column;
@@ -5347,7 +5346,6 @@ input[type="range"]:active::-ms-thumb {
 	transition: all 0.3s ease 0s;
 	cursor: pointer;
 	@media (max-width: 500px) {
-		background: blue;
 		height: 24px !important;
 		&:not(:last-child) {
 			margin: 0 0 15px 0;
